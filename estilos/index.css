@@ -5,6 +5,10 @@
     font-family: "Qatar2022", sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: rgb(181, 181, 181);
     background: linear-gradient(90deg,
@@ -16,7 +20,11 @@ body {
 }
 
 h1 {
+    color: rgb(132, 110, 38);
     font-size: 3rem;
+    animation: h1-animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 
 h2 {
@@ -25,6 +33,13 @@ h2 {
 
 h3 {
     font-size: 1.5rem;
+}
+
+@keyframes h1-animation {
+
+    50% {
+        color: rgb(192, 160, 53);
+    }
 }
 
 ul {

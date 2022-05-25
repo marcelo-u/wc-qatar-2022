@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../estilos/index.css">
+  <link href="http://fonts.cdnfonts.com/css/qatar2022" rel="stylesheet" />
+  <title>Contacto 📞</title>
+</head>
+
+<body>
+  <main>
+    <div class="container-form">
+      <header class="header grid-header">
+        <h1>Qatar 2022</h1>
+        <nav>
+          <ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#stadiums">Estadios</a></li>
+            <li><a href="../index.html#teams">Equipos</a></li>
+            <li><a href="../index.html#fixture">Fixture</a></li>
+          </ul>
+        </nav>
+      </header>
+      <form action="">
+        <legend>
+          Ingresá tus datos y te contactaremos a la brevedad
+        </legend>
+        <br><br><br>
+        <div>
+          <label for="name">Nombre</label>
+          <input type="text" name="name" placeholder="John Doe" />
+        </div>
+        <br />
+        <div>
+          <label for="email">Correo electrónico</label>
+          <input type="email" name="email" placeholder="john.doe@email.com" />
+        </div>
+        <div>
+          <label for="reason">Motivo del contacto</label>
+          <select name="reason" id="reason">
+            <option value="info" selected>Informacion</option>
+            <option value="suggestion">Sugerencia</option>
+            <option value="problem">Problema</option>
+          </select>
+          </label>
+        </div>
+        <div>
+          <label for="comentario">Contanos más</label>
+          <br>
+          <textarea name="comentario" id="" cols="30" rows="10" placeholder="Blablabla blabla..."></textarea>
+        </div>
+        <div>
+          <input type="submit" value="Enviar">
+          <input type="reset" value="Limpiar">
+        </div>
+      </form>
+    </div>
+  </main>
+</body>
+
+</html>

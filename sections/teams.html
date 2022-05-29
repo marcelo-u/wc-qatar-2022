@@ -5,6 +5,8 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <link rel="stylesheet" href="../estilos/index.css" />
   <link href="http://fonts.cdnfonts.com/css/qatar2022" rel="stylesheet" />
 
@@ -12,65 +14,101 @@
 </head>
 
 <body>
+  <header class="header grid-header">
+    <nav class="navbar navbar-expand-lg p-3 bg-light" style="--bs-bg-opacity: .1;">
+      <div class=" container-fluid p-1">
+        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon hamburger"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          Qatar 2022
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav mx-5">
+            <a class="nav-link" href="../index.html">Inicio</a>
+            <a class="nav-link" href="../index.html#qatar">Qatar</a>
+            <a class="nav-link" href="../index.html#stadiums">Estadios</a>
+            <a class="nav-link" href="../index.html#fixture">Fixture</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
   <main>
     <section>
       <div class="container-teams">
-        <header class="header grid-header">
-          <h1>Qatar 2022</h1>
-          <nav>
-            <ul class="menu">
-              <li><a href="../index.html">Home</a></li>
-              <li><a href="../index.html#qatar">Qatar</a></li>
-              <li><a href="../index.html#stadiums">Estadios</a></li>
-              <li><a href="../index.html#fixture">Fixture</a></li>
-            </ul>
-          </nav>
-        </header>
+
         <div class="team-item">
           <div class="team-img">
             <img src="https://a.espncdn.com/photo/2018/1115/r464019_1296x729_16-9.jpg" alt="Qatar" />
           </div>
           <div class="goalkeepers">
             <h3>Arqueros</h3>
-            <ol>
-              <li>22 - Meshaal Barsham</li>
-              <li>1 - Saad Al-Sheeb</li>
-              <li>21 - Yousef Hassan</li>
+            <ol class="list-group list-group-numbered">
+              <li class="list-group-item d-flex justify-content-between align-items-center">Meshaal Barsham <span
+                  class="badge bg-primary rounded-pill">22</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">Saad Al-Sheeb<span
+                  class="badge bg-primary rounded-pill">1</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">Yousef Hassan<span
+                  class="badge bg-primary rounded-pill">21</span></li>
             </ol>
           </div>
           <div class="defenders">
             <h3>Defensores</h3>
-            <ol>
-              <li>2 - Ró-Ró</li>
-              <li>3 - Tarek Salman</li>
-              <li>5 - Musab Kheder</li>
-              <li>13 - Homam Ahmed</li>
-              <li>14 - Bassam Al-Rawi</li>
-              <li>15 - Boualem Khoukhi</li>
-              <li>16 - Abdelkarim Hassan</li>
+            <ol class="list-group list-group-numbered">
+              <li class="list-group-item d-flex justify-content-between align-items-center">Ró-Ró<span
+                  class="badge bg-primary rounded-pill">2</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">3 - Tarek Salman<span
+                  class="badge bg-primary rounded-pill">3</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">5 - Musab Kheder<span
+                  class="badge bg-primary rounded-pill">5</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">13 - Homam Ahmed<span
+                  class="badge bg-primary rounded-pill">13</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">14 - Bassam Al-Rawi<span
+                  class="badge bg-primary rounded-pill">14</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">15 - Boualem Khoukhi<span
+                  class="badge bg-primary rounded-pill">15</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">16 - Abdelkarim Hassan<span
+                  class="badge bg-primary rounded-pill">16</span></li>
             </ol>
           </div>
           <div class="midfielders">
             <h3>Mediocampistas</h3>
-            <ol>
-              <li>6 - Abdulaziz Hatem</li>
-              <li>4 - Mohammed Waad</li>
-              <li>8 - Ali Assadalla</li>
-              <li>12 - Karim Boudiaf</li>
-              <li>20 - Abdullah Al-Ahrak</li>
-              <li>23 - Assim Madibo</li>
+            <ol class="list-group list-group-numbered">
+              <li class="list-group-item d-flex justify-content-between align-items-center">6 - Abdulaziz Hatem<span
+                  class="badge bg-primary rounded-pill">6</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">4 - Mohammed Waad<span
+                  class="badge bg-primary rounded-pill">4</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">8 - Ali Assadalla<span
+                  class="badge bg-primary rounded-pill">8</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">12 - Karim Boudiaf<span
+                  class="badge bg-primary rounded-pill">12</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">20 - Abdullah Al-Ahrak<span
+                  class="badge bg-primary rounded-pill">20</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">23 - Assim Madibo<span
+                  class="badge bg-primary rounded-pill">23</span></li>
             </ol>
           </div>
           <div class="strikers">
             <h3>Delanteros</h3>
-            <ol>
-              <li>11 - Akram Afif</li>
-              <li>7 - Ahmed Alaaeldin</li>
-              <li>9 - Mohammed Muntari</li>
-              <li>10 - Hassan Al-Haydos</li>
-              <li>17 - Ismaeel Mohammad</li>
-              <li>18 - Khalid Muneer</li>
-              <li>19 - Almoez Ali</li>
+            <ol class="list-group list-group-numbered">
+              <li class="list-group-item d-flex justify-content-between align-items-center">11 - Akram Afif<span
+                  class="badge bg-primary rounded-pill">11</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">7 - Ahmed Alaaeldin<span
+                  class="badge bg-primary rounded-pill">7</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">9 - Mohammed Muntari<span
+                  class="badge bg-primary rounded-pill">9</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">10 - Hassan Al-Haydos<span
+                  class="badge bg-primary rounded-pill">10</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">17 - Ismaeel Mohammad<span
+                  class="badge bg-primary rounded-pill">17</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">18 - Khalid Muneer<span
+                  class="badge bg-primary rounded-pill">18</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">19 - Almoez Ali<span
+                  class="badge bg-primary rounded-pill">19</span></li>
             </ol>
           </div>
         </div>
@@ -81,52 +119,83 @@
           </div>
           <div class="goalkeepers">
             <h3>Arqueros</h3>
-            <ol>
-              <li>Jasper Cillessen</li>
-              <li>Tim Krul</li>
-              <li>Mark Flekken</li>
+            <ol class="list-group list-group-numbered">
+              <li class="list-group-item d-flex justify-content-between align-items-center">Jasper Cillessen<span
+                  class="badge bg-primary rounded-pill">xx</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">Tim Krul<span
+                  class="badge bg-primary rounded-pill">xx</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">Mark Flekken<span
+                  class="badge bg-primary rounded-pill">xx</span></li>
             </ol>
           </div>
           <div class="defenders">
             <h3>Defensores</h3>
-            <ol>
-              <li>Daley Blind</li>
-              <li>Stefan de Vrij</li>
-              <li>Virgil van Dijk (captain)</li>
-              <li>Matthijs de Ligt</li>
-              <li>Denzel Dumfries</li>
-              <li>Nathan Aké</li>
-              <li>Hans Hateboer</li>
-              <li>Owen Wijndal</li>
-              <li>Jurriën Timber</li>
-              <li>Rick Karsdorp</li>
-              <li>Tyrell Malacia</li>
-              <li>Jordan Teze</li>
+            <ol class="list-group list-group-numbered">
+              <li class="list-group-item d-flex justify-content-between align-items-center">Daley Blind<span
+                  class="badge bg-primary rounded-pill">xx</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">Stefan de Vrij<span
+                  class="badge bg-primary rounded-pill">xx</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">Virgil van Dijk (captain)
+                <span class="badge bg-primary rounded-pill">xx</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">Matthijs de Ligt<span
+                  class="badge bg-primary rounded-pill">xx</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">Denzel Dumfries<span
+                  class="badge bg-primary rounded-pill">xx</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">Nathan Aké<span
+                  class="badge bg-primary rounded-pill">xx</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">Hans Hateboer<span
+                  class="badge bg-primary rounded-pill">xx</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">Owen Wijndal<span
+                  class="badge bg-primary rounded-pill">xx</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">Jurriën Timber<span
+                  class="badge bg-primary rounded-pill">xx</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">Rick Karsdorp<span
+                  class="badge bg-primary rounded-pill">xx</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">Tyrell Malacia<span
+                  class="badge bg-primary rounded-pill">xx</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">Jordan Teze<span
+                  class="badge bg-primary rounded-pill">xx</span></li>
             </ol>
           </div>
           <div class="midfielders">
             <h3>Mediocampistas</h3>
-            <ol>
-              <li>Frenkie de Jong</li>
-              <li>Davy Klaassen</li>
-              <li>Marten de Roon</li>
-              <li>Jordy Clasie</li>
-              <li>Teun Koopmeiners</li>
-              <li>Guus Til</li>
+            <ol class="list-group list-group-numbered">
+              <li class="list-group-item d-flex justify-content-between align-items-center">Frenkie de Jong<span
+                  class="badge bg-primary rounded-pill">xx</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">Davy Klaassen<span
+                  class="badge bg-primary rounded-pill">xx</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">Marten de Roon<span
+                  class="badge bg-primary rounded-pill">xx</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">Jordy Clasie<span
+                  class="badge bg-primary rounded-pill">xx</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">Teun Koopmeiners<span
+                  class="badge bg-primary rounded-pill">xx</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">Guus Til<span
+                  class="badge bg-primary rounded-pill">xx</span></li>
             </ol>
           </div>
           <div class="strikers">
             <h3>Delanteros</h3>
-            <ol>
-              <li>Memphis Depay</li>
-              <li>Luuk de Jong</li>
-              <li>Steven Berghuis</li>
-              <li>Steven Bergwijn</li>
-              <li>Vincent Janssen</li>
-              <li>Wout Weghorst</li>
-              <li>Arnaut Danjuma</li>
-              <li>Cody Gakpo</li>
-              <li>Noa Lang</li>
+            <ol class="list-group list-group-numbered">
+              <li class="list-group-item d-flex justify-content-between align-items-center">Memphis Depay<span
+                  class="badge bg-primary rounded-pill">xx</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">Luuk de Jong<span
+                  class="badge bg-primary rounded-pill">xx</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">Steven Berghuis<span
+                  class="badge bg-primary rounded-pill">xx</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">Steven Bergwijn<span
+                  class="badge bg-primary rounded-pill">xx</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">Vincent Janssen<span
+                  class="badge bg-primary rounded-pill">xx</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">Wout Weghorst<span
+                  class="badge bg-primary rounded-pill">xx</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">Arnaut Danjuma<span
+                  class="badge bg-primary rounded-pill">xx</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">Cody Gakpo<span
+                  class="badge bg-primary rounded-pill">xx</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">Noa Lang<span
+                  class="badge bg-primary rounded-pill">xx</span></li>
             </ol>
           </div>
         </div>
@@ -139,54 +208,86 @@
           </div>
           <div class="goalkeepers">
             <h3>Arqueros</h3>
-            <ol>
-              <li>1 - Hernán Galíndez</li>
-              <li>22 - Moisés Ramírez</li>
-              <li>12 - Jorge Pinos</li>
+            <ol class="list-group list-group-numbered">
+              <li class="list-group-item d-flex justify-content-between align-items-center">1 - Hernán Galíndez<span
+                  class="badge bg-primary rounded-pill">1</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">22 - Moisés Ramírez<span
+                  class="badge bg-primary rounded-pill">22</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">12 - Jorge Pinos<span
+                  class="badge bg-primary rounded-pill">12</span></li>
             </ol>
           </div>
           <div class="defenders">
             <h3>Defensores</h3>
-            <ol>
-              <li>4 - Robert Arboleda</li>
-              <li>7 - Pervis Estupiñán</li>
-              <li>17 - Ángelo Preciado</li>
-              <li>3 - Piero Hincapié</li>
-              <li>14 - Xavier Arreaga</li>
-              <li>18 - Diego Palacios</li>
-              <li>6 - Byron Castillo</li>
-              <li>2 - Fernando León</li>
+            <ol class="list-group list-group-numbered">
+              <li class="list-group-item d-flex justify-content-between align-items-center">Robert Arboleda<span
+                  class="badge bg-primary rounded-pill">4</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">Pervis Estupiñán<span
+                  class="badge bg-primary rounded-pill">7</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">Ángelo Preciado<span
+                  class="badge bg-primary rounded-pill">17</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">Piero Hincapié<span
+                  class="badge bg-primary rounded-pill">3</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">Xavier Arreaga<span
+                  class="badge bg-primary rounded-pill">14</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">Diego Palacios<span
+                  class="badge bg-primary rounded-pill">18</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">Byron Castillo<span
+                  class="badge bg-primary rounded-pill">6</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">Fernando León<span
+                  class="badge bg-primary rounded-pill">2</span></li>
             </ol>
           </div>
           <div class="midfielders">
             <h3>Mediocampistas</h3>
-            <ol>
-              <li>8 - Carlos Gruezo</li>
-              <li>15 - Ángel Mena</li>
-              <li>20 - Jhegson Méndez</li>
-              <li>19 - Gonzalo Plata</li>
-              <li>10 - Romario Ibarra</li>
-              <li>23 - Moisés Caicedo</li>
-              <li>21 - Alan Franco</li>
-              <li>XX -Joao Rojas</li>
-              <li>XX - José Cifuentes</li>
-              <li>5 - Michael Carcelén</li>
-              <li>16 - Jeremy Sarmiento</li>
-              <li>XX - Danny Cabezas</li>
+            <ol class="list-group list-group-numbered">
+              <li class="list-group-item d-flex justify-content-between align-items-center">Carlos Gruezo<span
+                  class="badge bg-primary rounded-pill">8</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">Ángel Mena<span
+                  class="badge bg-primary rounded-pill">15</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">Jhegson Méndez<span
+                  class="badge bg-primary rounded-pill">20</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">Gonzalo Plata<span
+                  class="badge bg-primary rounded-pill">19</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">Romario Ibarra<span
+                  class="badge bg-primary rounded-pill">10</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">Moisés Caicedo<span
+                  class="badge bg-primary rounded-pill">23</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">Alan Franco<span
+                  class="badge bg-primary rounded-pill">21</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">Joao Rojas<span
+                  class="badge bg-primary rounded-pill">xx</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">José Cifuentes<span
+                  class="badge bg-primary rounded-pill">xx</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">Michael Carcelén<span
+                  class="badge bg-primary rounded-pill">5</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">Jeremy Sarmiento<span
+                  class="badge bg-primary rounded-pill">16</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">Danny Cabezas<span
+                  class="badge bg-primary rounded-pill">xx</span></li>
             </ol>
           </div>
           <div class="strikers">
             <h3>Delanteros</h3>
-            <ol>
-              <li>Memphis Depay</li>
-              <li>Luuk de Jong</li>
-              <li>Steven Berghuis</li>
-              <li>Steven Bergwijn</li>
-              <li>Vincent Janssen</li>
-              <li>Wout Weghorst</li>
-              <li>Arnaut Danjuma</li>
-              <li>Cody Gakpo</li>
-              <li>Noa Lang</li>
+            <ol class="list-group list-group-numbered">
+              <li class="list-group-item d-flex justify-content-between align-items-center">Memphis Depay<span
+                  class="badge bg-primary rounded-pill">xx</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">Luuk de Jong<span
+                  class="badge bg-primary rounded-pill">xx</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">Steven Berghuis<span
+                  class="badge bg-primary rounded-pill">xx</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">Steven Bergwijn<span
+                  class="badge bg-primary rounded-pill">xx</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">Vincent Janssen<span
+                  class="badge bg-primary rounded-pill">xx</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">Wout Weghorst<span
+                  class="badge bg-primary rounded-pill">xx</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">Arnaut Danjuma<span
+                  class="badge bg-primary rounded-pill">xx</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">Cody Gakpo<span
+                  class="badge bg-primary rounded-pill">xx</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">Noa Lang<span
+                  class="badge bg-primary rounded-pill">xx</span></li>
             </ol>
           </div>
         </div>
@@ -199,62 +300,91 @@
           </div>
           <div class="goalkeepers">
             <h3>Arqueros</h3>
-            <ol>
-              <li>1 - Bingourou Kamara</li>
-              <li>16 - Édouard Mendy</li>
-              <li>23 - Alioune Badara Faty</li>
+            <ol class="list-group list-group-numbered">
+              <li class="list-group-item d-flex justify-content-between align-items-center">Bingourou Kamara<span
+                  class="badge bg-primary rounded-pill">1</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">Édouard Mendy<span
+                  class="badge bg-primary rounded-pill">16</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">Alioune Badara Faty
+                <span class="badge bg-primary rounded-pill">23</span>
+              </li>
             </ol>
           </div>
           <div class="defenders">
             <h3>Defensores</h3>
-            <ol>
-              <li>2 - Saliou Ciss</li>
-              <li>3 - Kalidou Koulibaly (c)</li>
-              <li>4 - Pape Abou Cissé</li>
-              <li>12 - Fodé Ballo-Touré</li>
-              <li>14 - Abdoulaye Seck</li>
-              <li>20 - Bouna Sarr</li>
-              <li>21 - Youssouf Sabaly</li>
-              <li>22 - Abdou Diallo</li>
+            <ol class="list-group list-group-numbered">
+              <li class="list-group-item d-flex justify-content-between align-items-center">2 - Saliou Ciss<span
+                  class="badge bg-primary rounded-pill">xx</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">3 - Kalidou Koulibaly (c)
+                <span class="badge bg-primary rounded-pill">xx</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">4 - Pape Abou Cissé<span
+                  class="badge bg-primary rounded-pill">xx</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">12 - Fodé Ballo-Touré<span
+                  class="badge bg-primary rounded-pill">xx</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">14 - Abdoulaye Seck<span
+                  class="badge bg-primary rounded-pill">xx</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">20 - Bouna Sarr<span
+                  class="badge bg-primary rounded-pill">xx</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">21 - Youssouf Sabaly<span
+                  class="badge bg-primary rounded-pill">xx</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">22 - Abdou Diallo<span
+                  class="badge bg-primary rounded-pill">xx</span></li>
             </ol>
           </div>
           <div class="midfielders">
             <h3>Mediocampistas</h3>
-            <ol>
-              <li>5 - Idrissa Gueye</li>
-              <li>6 - Nampalys Mendy</li>
-              <li>8 - Cheikhou Kouyaté</li>
-              <li>13 - Pape Gueye</li>
-              <li>17 - Pape Matar Sarr</li>
-              <li>XX - Mamadou Loum</li>
-              <li>XX - Moustapha Name</li>
+            <ol class="list-group list-group-numbered">
+              <li class="list-group-item d-flex justify-content-between align-items-center">5 - Idrissa Gueye<span
+                  class="badge bg-primary rounded-pill">5</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">6 - Nampalys Mendy<span
+                  class="badge bg-primary rounded-pill">6</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">8 - Cheikhou Kouyaté<span
+                  class="badge bg-primary rounded-pill">8</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">13 - Pape Gueye<span
+                  class="badge bg-primary rounded-pill">13</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">17 - Pape Matar Sarr<span
+                  class="badge bg-primary rounded-pill">17</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">XX - Mamadou Loum<span
+                  class="badge bg-primary rounded-pill">xx</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">XX - Moustapha Name<span
+                  class="badge bg-primary rounded-pill">xx</span></li>
             </ol>
           </div>
           <div class="strikers">
             <h3>Delanteros</h3>
-            <ol>
-              <li>7 - Keita Baldé</li>
-              <li>9 - Boulaye Dia</li>
-              <li>10 - Sadio Mané</li>
-              <li>11 - Habib Diallo</li>
-              <li>15 - Bamba Dieng</li>
-              <li>18 - Ismaïla Sarr</li>
-              <li>19 - Famara Diédhiou</li>
-              <li>XX - Mame Thiam</li>
+            <ol class="list-group list-group-numbered">
+              <li class="list-group-item d-flex justify-content-between align-items-center">7 - Keita Baldé<span
+                  class="badge bg-primary rounded-pill">7</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">9 - Boulaye Dia<span
+                  class="badge bg-primary rounded-pill">9</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">10 - Sadio Mané<span
+                  class="badge bg-primary rounded-pill">10</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">11 - Habib Diallo<span
+                  class="badge bg-primary rounded-pill">11</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">15 - Bamba Dieng<span
+                  class="badge bg-primary rounded-pill">15</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">18 - Ismaïla Sarr<span
+                  class="badge bg-primary rounded-pill">18</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">19 - Famara Diédhiou<span
+                  class="badge bg-primary rounded-pill">19</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">XX - Mame Thiam<span
+                  class="badge bg-primary rounded-pill">xx</span></li>
             </ol>
           </div>
         </div>
         <footer>
-          <nav>
-            <ul class="menu">
-              <li><a href="https://www.fifa.com">Fifa sitio oficial</a></li>
-              <li><a href="contact.html">Contacto</a></li>
-            </ul>
+          <nav class="nav justify-content-evenly bg-light" style="--bs-bg-opacity: .1;">
+            <a class="nav-link" href="https://www.fifa.com">Fifa sitio oficial</a>
+            <a class="nav-link" href="./contact.html">Contacto</a>
           </nav>
         </footer>
       </div>
     </section>
   </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

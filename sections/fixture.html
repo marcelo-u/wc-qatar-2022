@@ -5,29 +5,44 @@
    <meta charset="UTF-8" />
    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
    <link rel="stylesheet" href="../estilos/index.css" />
    <link href="http://fonts.cdnfonts.com/css/qatar2022" rel="stylesheet" />
    <title>Fixture 🗓</title>
 </head>
 
 <body>
+   <header class="header grid-header">
+      <nav class="navbar navbar-expand-lg p-3 bg-light" style="--bs-bg-opacity: .1;">
+         <div class="container-fluid p-1">
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+               data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+               aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon hamburger"></span>
+            </button>
+            <a class="navbar-brand" href="../index.html">
+               Qatar 2022
+            </a>
+
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+               <div class="navbar-nav mx-5">
+                  <a class="nav-link" href="../index.html">Inicio</a>
+                  <a class="nav-link" href="../index.html#qatar">Qatar</a>
+                  <a class="nav-link" href="../index.html#stadiums">Estadios</a>
+                  <a class="nav-link" href="../index.html#teams">Equipos</a>
+               </div>
+            </div>
+         </div>
+      </nav>
+   </header>
    <main>
       <div class="container-fixture">
-         <header class="header grid-header">
-            <h1>Qatar 2022</h1>
-            <nav>
-               <ul class="menu">
-                  <li><a href="../index.html">Home</a></li>
-                  <li><a href="../index.html#qatar">Qatar</a></li>
-                  <li><a href="../index.html#stadiums">Estadios</a></li>
-                  <li><a href="../index.html#teams">Equipos</a></li>
-               </ul>
-            </nav>
-         </header>
+
          <div class="fixture">
             <div class="fixture-item">
                <h3>Grupo A</h3>
-               <table id="qatar-stats" summary="Grupo A">
+               <table class="table table-striped bg-light" summary="Grupo A">
                   <thead>
                      <th>Dia</th>
                      <th>Hora (ARG)</th>
@@ -83,7 +98,7 @@
             </div>
             <div class="fixture-item">
                <h3>Grupo B</h3>
-               <table id="qatar-stats" summary="Grupo A">
+               <table class="table table-striped bg-light" summary="Grupo A">
                   <thead>
                      <th>Dia</th>
                      <th>Hora (ARG)</th>
@@ -139,7 +154,7 @@
             </div>
             <div class="fixture-item">
                <h3>Grupo C</h3>
-               <table id="qatar-stats" summary="Grupo A">
+               <table class="table table-striped bg-light" summary="Grupo A">
                   <thead>
                      <th>Dia</th>
                      <th>Hora (ARG)</th>
@@ -195,7 +210,7 @@
             </div>
             <div class="fixture-item">
                <h3>Grupo D</h3>
-               <table id="qatar-stats" summary="Grupo A">
+               <table class="table table-striped bg-light" summary="Grupo A">
                   <thead>
                      <th>Dia</th>
                      <th>Hora (ARG)</th>
@@ -251,7 +266,7 @@
             </div>
             <div class="fixture-item">
                <h3>Grupo E</h3>
-               <table id="qatar-stats" summary="Grupo A">
+               <table class="table table-striped bg-light" summary="Grupo A">
                   <thead>
                      <th>Dia</th>
                      <th>Hora (ARG)</th>
@@ -307,7 +322,7 @@
             </div>
             <div class="fixture-item">
                <h3>Grupo F</h3>
-               <table id="qatar-stats" summary="Grupo A">
+               <table class="table table-striped bg-light" summary="Grupo A">
                   <thead>
                      <th>Dia</th>
                      <th>Hora (ARG)</th>
@@ -363,7 +378,7 @@
             </div>
             <div class="fixture-item">
                <h3>Grupo G</h3>
-               <table id="qatar-stats" summary="Grupo A">
+               <table class="table table-striped bg-light" summary="Grupo A">
                   <thead>
                      <th>Dia</th>
                      <th>Hora (ARG)</th>
@@ -419,7 +434,7 @@
             </div>
             <div class="fixture-item">
                <h3>Grupo H</h3>
-               <table id="qatar-stats" summary="Grupo A">
+               <table class="table table-striped bg-light" summary="Grupo A">
                   <thead>
                      <th>Dia</th>
                      <th>Hora (ARG)</th>
@@ -475,7 +490,7 @@
             </div>
             <div class="fixture-item playoff-table">
                <h3>8vos de Final</h3>
-               <table id="qatar-stats" summary="Grupo A">
+               <table class="table table-striped bg-light" summary="Grupo A">
                   <thead>
                      <th>Dia</th>
                      <th>Hora (ARG)</th>
@@ -544,7 +559,7 @@
             </div>
             <div class="fixture-item playoff-table">
                <h3>Cuartos de final</h3>
-               <table id="qatar-stats" summary="Grupo A">
+               <table class="table table-striped bg-light" summary="Grupo A">
                   <thead>
                      <th>Dia</th>
                      <th>Hora (ARG)</th>
@@ -586,7 +601,7 @@
             </div>
             <div class="fixture-item playoff-table">
                <h3>Semifinales</h3>
-               <table id="qatar-stats" summary="Grupo A">
+               <table class="table table-striped bg-light" summary="Grupo A">
                   <thead>
                      <th>Dia</th>
                      <th>Hora (ARG)</th>
@@ -614,7 +629,7 @@
             </div>
             <div class="fixture-item playoff-table">
                <h3>Final</h3>
-               <table id="qatar-stats" summary="Grupo A">
+               <table class="table table-striped bg-light" summary="Grupo A">
                   <thead>
                      <th>Dia</th>
                      <th>Hora (ARG)</th>
@@ -635,7 +650,7 @@
             </div>
             <div class="fixture-item playoff-table">
                <h3>3er Puesto</h3>
-               <table id="qatar-stats" summary="Grupo A">
+               <table class="table table-striped bg-light" summary="Grupo A">
                   <thead>
                      <th>Dia</th>
                      <th>Hora (ARG)</th>
@@ -730,15 +745,16 @@
             </div>
          </div>
          <footer>
-            <nav>
-               <ul class="menu">
-                  <li><a href="https://www.fifa.com">Fifa sitio oficial</a></li>
-                  <li><a href="contact.html">Contacto</a></li>
-               </ul>
+            <nav class="nav justify-content-evenly bg-light" style="--bs-bg-opacity: .1;">
+               <a class="nav-link" href="https://www.fifa.com">Fifa sitio oficial</a>
+               <a class="nav-link" href="./contact.html">Contacto</a>
             </nav>
          </footer>
       </div>
    </main>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"></script>
 </body>
 
 </html>

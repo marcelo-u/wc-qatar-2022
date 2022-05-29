@@ -19,20 +19,20 @@ body {
     width: 100%;
 }
 
-h1 {
+.navbar-brand {
     color: rgb(132, 110, 38);
-    font-size: 3rem;
+    font-size: 2.5rem;
     animation: h1-animation;
     animation-duration: 5s;
     animation-iteration-count: infinite;
 }
 
-h2 {
-    font-size: 2rem;
-}
-
-h3 {
-    font-size: 1.5rem;
+h1 {
+    color: rgb(132, 110, 38);
+    font-size: 2.5rem;
+    animation: h1-animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 
 @keyframes h1-animation {
@@ -40,10 +40,6 @@ h3 {
     50% {
         color: rgb(192, 160, 53);
     }
-}
-
-ul {
-    background-color: rgba(255, 255, 255, 0.2);
 }
 
 /*contenedor principal flex*/
@@ -56,20 +52,6 @@ ul {
 
 header {
     margin-top: 1rem;
-}
-
-/* menu header, footer*/
-.menu {
-    list-style: none;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    text-align: center;
-}
-
-.menu li {
-    margin: 10px;
-    padding: 10px;
 }
 
 /* ajusta a 700px cada seccion de la home */
@@ -109,16 +91,8 @@ section {
 
 /* card de contenido de la home */
 .card {
-    border-radius: 15px;
     font-size: 1.5rem;
-    padding: 5px;
-    align-items: stretch;
-    display: flex;
-    flex-direction: column;
-    align-items: column;
-    justify-content: space-between;
     background: rgba(00, 00, 00, 0.5);
-    color: rgba(245, 245, 245, 0.811);
 }
 
 .card-half {
@@ -139,27 +113,10 @@ section {
 
 a {
     text-decoration: none;
-    text-align: center;
-    margin: 50px;
+}
+
+a.nav-link {
     color: navy;
-}
-
-/* estilo a, boton redondo */
-a.more-btn span {
-    font-size: 3rem;
-    font-family: "Courier New", Courier, monospace;
-    border-radius: 50%;
-    color: white;
-    font-weight: bold;
-    background-color: brown;
-    padding: 0px 12.5px;
-}
-
-a.more-btn span:hover {
-    border: 1px;
-    background-color: rgb(77, 19, 19);
-    color: gray;
-    transition: all 0.2s ease;
 }
 
 /* QATAR */
@@ -220,42 +177,6 @@ footer {
     grid-area: footer;
 }
 
-/* QATAR: Estilos table */
-#qatar-stats {
-    font-family: Arial, Helvetica, sans-serif;
-    width: 100%;
-}
-
-#qatar-stats th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: brown;
-    color: white;
-}
-
-#qatar-stats td,
-#qatar-stats th {
-    border: 1px solid #ddd;
-    padding: 8px;
-}
-
-#qatar-stats tr {
-    background-color: white;
-}
-
-#qatar-stats tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-#qatar-stats tr:hover {
-    background-color: rgb(245, 201, 201);
-}
-
-#customers tr:hover {
-    background-color: #ddd;
-}
-
 /* ESTADIOS */
 
 .container-stadiums {
@@ -279,10 +200,6 @@ footer {
 
 .stadium-title {
     grid-area: stadium-title;
-}
-
-.stadium-stats {
-    grid-area: stadium-stats;
 }
 
 .stadium-map {
@@ -317,10 +234,6 @@ footer {
         margin: 1rem;
     }
 
-    .menu {
-        flex-flow: column;
-        justify-content: center;
-    }
 }
 
 /* Qatar Responsive (grid)*/
@@ -376,7 +289,7 @@ footer {
 
 .team-item {
     margin-bottom: 25vh;
-    gap: 2px;
+    gap: 10px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat 2fr, 1fr;
@@ -385,12 +298,7 @@ footer {
         "goalkeepers defenders midfielders strikers";
 }
 
-.team-item ol {
-    list-style: none;
-}
-
 .team-img {
-    margin: auto;
     grid-area: team-img;
 }
 
@@ -419,14 +327,31 @@ footer {
 }
 
 /* Teams responsive grid within flex */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1280px) {
     .team-item {
+        height: auto;
+        margin-bottom: 10vh;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 2fr 1fr 1fr;
         grid-template-areas:
             "team-img team-img"
             "goalkeepers defenders"
             "midfielders strikers";
+
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .team-item {
+        margin-bottom: 10vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas:
+            "team-img"
+            "goalkeepers"
+            "defenders"
+            "midfielders"
+            "strikers";
     }
 
     .container-teams {
@@ -559,8 +484,15 @@ footer {
     }
 
     .fixture-item {
+        min-width: 300px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .fixture-item {
         font-size: 10px;
     }
+
 }
 
 .container-form {

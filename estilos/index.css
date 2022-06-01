@@ -158,54 +158,7 @@ footer {
     grid-area: footer;
 }
 
-
-
-
-
-
-/* Home Responsive */
-@media screen and (max-width: 500px) {
-    .background-img {
-        height: 500px;
-    }
-
-    .card-text {
-        font-size: 1rem;
-    }
-}
-
-/* Qatar Responsive (grid)*/
-@media screen and (max-width: 800px) {
-    .container-qatar {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(7, auto);
-        grid-template-areas:
-            "header"
-            "grid-title"
-            "stats"
-            "aside"
-            "media1"
-            "media2"
-            "footer";
-    }
-
-    .media2 iframe {
-        height: auto;
-        width: 100%;
-    }
-}
-
-@keyframes h1-animation {
-
-    50% {
-        color: rgb(192, 160, 53);
-    }
-}
-
-
-
 /* ESTADIOS */
-
 .container-stadiums {
     margin: 10px;
 }
@@ -260,10 +213,7 @@ footer {
 
 }
 
-
-
 /* Stadiums responsive grid within flex */
-
 @media screen and (max-width: 800px) {
     .item-grid {
         grid-template-columns: 1fr;
@@ -329,51 +279,15 @@ footer {
     grid-area: strikers;
 }
 
-/* Teams responsive grid within flex */
-@media screen and (max-width: 1280px) {
-    .team-item {
-        height: auto;
-        margin-bottom: 10vh;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, auto);
-        grid-template-areas:
-            "team-img team-img"
-            "goalkeepers defenders"
-            "midfielders strikers";
 
-    }
-}
-
-@media screen and (max-width: 800px) {
-    .team-item {
-        margin-bottom: 10vh;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, auto);
-        grid-template-areas:
-            "team-img"
-            "goalkeepers"
-            "defenders"
-            "midfielders"
-            "strikers";
-    }
-
-    .container-teams {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-    }
-}
 
 /* FIXTURE flex */
-
 .container-fixture {
     margin-top: 10px;
     margin-left: 10px;
     width: 95%;
     gap: 20px;
     justify-content: space-evenly;
-    display: flex;
-    flex-flow: column wrap;
 }
 
 .fixture {
@@ -467,6 +381,7 @@ footer {
 }
 
 .final {
+    border-style: double;
     grid-area: final;
 }
 
@@ -476,27 +391,6 @@ footer {
 
 .playoff-table {
     display: none;
-}
-
-@media screen and (max-width: 800px) {
-    .playoff {
-        display: none;
-    }
-
-    .playoff-table {
-        display: unset;
-    }
-
-    .fixture-item {
-        min-width: 300px;
-    }
-}
-
-@media screen and (max-width: 550px) {
-    .fixture-item {
-        font-size: 10px;
-    }
-
 }
 
 .container-form {
@@ -534,4 +428,91 @@ input[type=submit] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+}
+
+/* Home Responsive */
+@media screen and (max-width: 500px) {
+    .background-img {
+        height: 500px;
+    }
+
+    .card-text {
+        font-size: 1rem;
+    }
+
+    .fixture-item {
+        font-size: 10px;
+    }
+}
+
+/* Qatar Responsive (grid)*/
+@media screen and (max-width: 800px) {
+    .container-qatar {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7, auto);
+        grid-template-areas:
+            "header"
+            "grid-title"
+            "stats"
+            "aside"
+            "media1"
+            "media2"
+            "footer";
+    }
+
+    .media2 iframe {
+        height: auto;
+        width: 100%;
+    }
+
+    .team-item {
+        margin-bottom: 10vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas:
+            "team-img"
+            "goalkeepers"
+            "defenders"
+            "midfielders"
+            "strikers";
+    }
+
+    .container-teams {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .playoff {
+        display: none;
+    }
+
+    .playoff-table {
+        display: unset;
+    }
+
+    .fixture-item {
+        min-width: 300px;
+    }
+}
+
+/* Teams responsive grid within flex */
+@media screen and (max-width: 1280px) {
+    .team-item {
+        height: auto;
+        margin-bottom: 10vh;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas:
+            "team-img team-img"
+            "goalkeepers defenders"
+            "midfielders strikers";
+
+    }
+}
+
+@keyframes h1-animation {
+    50% {
+        color: rgb(192, 160, 53);
+    }
 }

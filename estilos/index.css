@@ -19,7 +19,7 @@ body {
     width: 100%;
 }
 
-.navbar-brand {
+h1 {
     color: rgb(132, 110, 38);
     font-size: 2.5rem;
     animation: h1-animation;
@@ -27,7 +27,7 @@ body {
     animation-iteration-count: infinite;
 }
 
-h1 {
+.navbar-brand {
     color: rgb(132, 110, 38);
     font-size: 2.5rem;
     animation: h1-animation;
@@ -42,27 +42,33 @@ h1 {
     }
 }
 
+
+.card-text {
+    font-size: 1.5rem;
+}
+
 /*contenedor principal flex*/
-.container-index {
+.container-main-home {
     text-align: center;
-}
-
-header {
-    margin-top: 1rem;
-}
-
-/* ajusta a 700px cada seccion de la home */
-section {
-    height: 700px;
-    display: flex;
 }
 
 /* clase para ajustar los background de la home*/
 .background-img {
+    height: 700px;
     display: flex;
     background-size: cover;
     background-position-x: center;
     min-width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    .background-img {
+        height: 500px;
+    }
+
+    .card-text {
+        font-size: 1rem;
+    }
 }
 
 /* inicio de bloque para imagenes de fondo */
@@ -84,27 +90,27 @@ section {
     background-image: url("../resources/img-teams1.jpeg");
 }
 
-/* inicio de bloque para imagenes de fondo */
 
-/* card de contenido de la home */
+
+/* estilos cards */
 .card {
-    font-size: 1.5rem;
     background: rgba(00, 00, 00, 0.5);
 }
+
 
 .card-half {
     margin: 5rem;
     width: 50%;
 }
 
-.carf-full {
+.card-full {
     text-align: justify;
     width: 100%;
 }
 
 /* clase para tirar las cards a la derecha */
 
-.right {
+.position-right {
     margin-left: auto;
 }
 

@@ -35,13 +35,13 @@ h1 {
     animation-iteration-count: infinite;
 }
 
-@keyframes h1-animation {
-
-    50% {
-        color: rgb(192, 160, 53);
-    }
+a {
+    text-decoration: none;
 }
 
+a.nav-link {
+    color: navy;
+}
 
 .card-text {
     font-size: 1.5rem;
@@ -61,17 +61,7 @@ h1 {
     min-width: 100%;
 }
 
-@media screen and (max-width: 600px) {
-    .background-img {
-        height: 500px;
-    }
-
-    .card-text {
-        font-size: 1rem;
-    }
-}
-
-/* inicio de bloque para imagenes de fondo */
+/* inicio imagenes de fondo */
 #qatar {
     background-image: url("../resources/img-qatar1.jpeg");
 }
@@ -90,13 +80,10 @@ h1 {
     background-image: url("../resources/img-teams1.jpeg");
 }
 
-
-
 /* estilos cards */
 .card {
     background: rgba(00, 00, 00, 0.5);
 }
-
 
 .card-half {
     margin: 5rem;
@@ -114,17 +101,8 @@ h1 {
     margin-left: auto;
 }
 
-a {
-    text-decoration: none;
-}
-
-a.nav-link {
-    color: navy;
-}
-
 /* QATAR */
-
-/* GRID */
+/* grid */
 .container-qatar {
     margin: 10px;
     width: 95%;
@@ -180,13 +158,56 @@ footer {
     grid-area: footer;
 }
 
+
+
+
+
+
+/* Home Responsive */
+@media screen and (max-width: 500px) {
+    .background-img {
+        height: 500px;
+    }
+
+    .card-text {
+        font-size: 1rem;
+    }
+}
+
+/* Qatar Responsive (grid)*/
+@media screen and (max-width: 800px) {
+    .container-qatar {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7, auto);
+        grid-template-areas:
+            "header"
+            "grid-title"
+            "stats"
+            "aside"
+            "media1"
+            "media2"
+            "footer";
+    }
+
+    .media2 iframe {
+        height: auto;
+        width: 100%;
+    }
+}
+
+@keyframes h1-animation {
+
+    50% {
+        color: rgb(192, 160, 53);
+    }
+}
+
+
+
 /* ESTADIOS */
 
 .container-stadiums {
-    display: flex;
-    flex-direction: column;
     margin: 10px;
-    width: 95%;
 }
 
 .item-grid {
@@ -239,26 +260,7 @@ footer {
 
 }
 
-/* Qatar Responsive (grid)*/
-@media screen and (max-width: 800px) {
-    .container-qatar {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(7, 1fr);
-        grid-template-areas:
-            "header"
-            "grid-title"
-            "stats"
-            "aside"
-            "media1"
-            "media2"
-            "footer";
-    }
 
-    .media2 iframe {
-        height: auto;
-        width: 100%;
-    }
-}
 
 /* Stadiums responsive grid within flex */
 
@@ -284,8 +286,6 @@ footer {
 /* TEAMS */
 
 .container-teams {
-    display: flex;
-    flex-direction: column;
     margin: 10px;
     width: 95%;
 }
@@ -310,22 +310,22 @@ footer {
 }
 
 .goalkeepers {
-    margin-left: 20px;
+    margin: 0px 5px;
     grid-area: goalkeepers;
 }
 
 .defenders {
-    margin-left: 20px;
+    margin: 0px 5px;
     grid-area: defenders;
 }
 
 .midfielders {
-    margin-left: 20px;
+    margin: 0px 5px;
     grid-area: midfielders;
 }
 
 .strikers {
-    margin-left: 20px;
+    margin: 0px 5px;
     grid-area: strikers;
 }
 
@@ -335,7 +335,7 @@ footer {
         height: auto;
         margin-bottom: 10vh;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 2fr 1fr 1fr;
+        grid-template-rows: repeat(3, auto);
         grid-template-areas:
             "team-img team-img"
             "goalkeepers defenders"
@@ -348,7 +348,7 @@ footer {
     .team-item {
         margin-bottom: 10vh;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, 1fr);
+        grid-template-rows: repeat(5, auto);
         grid-template-areas:
             "team-img"
             "goalkeepers"
@@ -358,7 +358,8 @@ footer {
     }
 
     .container-teams {
-        margin: none;
+        margin: 0;
+        padding: 0;
         width: 100%;
     }
 }

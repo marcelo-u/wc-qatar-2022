@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Qatar2022';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Qatar2022'), url('https://fonts.cdnfonts.com/s/38253/Qatar2022Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Qatar2022';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Qatar2022'), url('https://fonts.cdnfonts.com/s/38253/Qatar2022Heavy.woff') format('woff');
+}

@@ -35,6 +35,12 @@ a.nav-link {
     color: navy;
 }
 
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-top-left-radius: 35%;
+    border-bottom-right-radius: 35%;
+}
+
 .card-text {
     font-size: 1.5rem;
 }
@@ -102,8 +108,7 @@ a.nav-link {
     gap: 2rem;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: repeat(6, auto);
-    grid-template-areas:
-        "header header"
+    grid-template-areas: "header header"
         "grid-title grid-title"
         "aside stats"
         "media1 media1"
@@ -161,8 +166,7 @@ footer {
     flex-direction: row;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: auto auto 2fr;
-    grid-template-areas:
-        "stadium-title stadium-title"
+    grid-template-areas: "stadium-title stadium-title"
         "stadium-stats stadium-img"
         "stadium-map stadium-img";
 }
@@ -210,8 +214,7 @@ footer {
     .item-grid {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, auto);
-        grid-template-areas:
-            "stadium-title"
+        grid-template-areas: "stadium-title"
             "stadium-stats"
             "stadium-img";
     }
@@ -238,8 +241,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat 2fr, 1fr;
-    grid-template-areas:
-        "team-img team-img team-img team-img"
+    grid-template-areas: "team-img team-img team-img team-img"
         "goalkeepers defenders midfielders strikers";
 }
 
@@ -298,8 +300,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(8, 1fr);
-    grid-template-areas:
-        "roundof16-1 quarterfinal-a semifinal-1 ."
+    grid-template-areas: "roundof16-1 quarterfinal-a semifinal-1 ."
         "roundof16-2 quarterfinal-a semifinal-1 ."
         "roundof16-3 quarterfinal-b semifinal-1 final"
         "roundof16-4 quarterfinal-b semifinal-1 final"
@@ -440,8 +441,7 @@ input[type=submit] {
     .container-qatar {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(7, auto);
-        grid-template-areas:
-            "header"
+        grid-template-areas: "header"
             "grid-title"
             "stats"
             "aside"
@@ -459,8 +459,7 @@ input[type=submit] {
         margin-bottom: 10vh;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(5, auto);
-        grid-template-areas:
-            "team-img"
+        grid-template-areas: "team-img"
             "goalkeepers"
             "defenders"
             "midfielders"
@@ -482,7 +481,7 @@ input[type=submit] {
     }
 
     .fixture-item {
-        min-width: 300px;
+        width: 100%;
     }
 }
 
@@ -493,8 +492,7 @@ input[type=submit] {
         margin-bottom: 10vh;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, auto);
-        grid-template-areas:
-            "team-img team-img"
+        grid-template-areas: "team-img team-img"
             "goalkeepers defenders"
             "midfielders strikers";
 

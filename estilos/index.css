@@ -19,18 +19,10 @@ body {
     width: 100%;
 }
 
-h1 {
-    color: rgb(132, 110, 38);
-    font-size: 2.5rem;
-    animation: h1-animation;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-}
-
 .navbar-brand {
     color: rgb(132, 110, 38);
     font-size: 2.5rem;
-    animation: h1-animation;
+    animation: font-animation;
     animation-duration: 5s;
     animation-iteration-count: infinite;
 }
@@ -509,7 +501,7 @@ input[type=submit] {
     }
 }
 
-@keyframes h1-animation {
+@keyframes font-animation {
     50% {
         color: rgb(192, 160, 53);
     }

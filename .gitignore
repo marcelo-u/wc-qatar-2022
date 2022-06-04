@@ -1,2 +1,7 @@
 .DS_Store
 .vscode/
+nodemon
+package.json
+package-lock.json
+node_modules
+

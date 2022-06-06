@@ -1,0 +1,47 @@
+@import "./modules/colors";
+@import "./modules/fonts";
+@import "./modules/all";
+@import "./partials/header";
+@import "./partials/card";
+@import "./partials/form";
+@import "./partials/qatar-section";
+@import "./partials/stadiums-section";
+@import "./partials/teams-section";
+@import "./partials/fixture-section";
+
+/*contenedor principal flex*/
+.container-main-home {
+  text-align: center;
+  /* clase para ajustar los background de la home*/
+  .background-img {
+    height: 700px;
+    display: flex;
+    background-size: cover;
+    background-position-x: center;
+    min-width: 100%;
+  }
+  #qatar {
+    background-image: url("../resources/img-qatar1.jpeg");
+  }
+
+  #fixture {
+    background-image: url("../resources/img-fixture1.jpg");
+    background-position-y: center;
+  }
+
+  #stadiums {
+    background-image: url("../resources/img-stadiums1.jpeg");
+    background-position-y: center;
+  }
+
+  #teams {
+    background-image: url("../resources/img-teams1.jpeg");
+  }
+}
+
+/* Home Responsive */
+@media screen and (max-width: 500px) {
+  .background-img {
+    height: 500px;
+  }
+}

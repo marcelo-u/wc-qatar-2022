@@ -1,0 +1,26 @@
+.navbar-brand {
+  color: $color1;
+  font-size: 2.5rem;
+  animation: font-animation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-link {
+  color: $color3;
+  &:hover {
+    background-color: $bgColor2;
+    border-top-left-radius: 35%;
+    border-bottom-right-radius: 35%;
+  }
+}
+
+@keyframes font-animation {
+  50% {
+    color: $color2;
+  }
+}

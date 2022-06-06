@@ -1,0 +1,126 @@
+/* FIXTURE flex */
+.container-fixture {
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 95%;
+  gap: 20px;
+  justify-content: space-evenly;
+  .fixture {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+  }
+  .playoff {
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas:
+      "roundof16-1 quarterfinal-a semifinal-1 ."
+      "roundof16-2 quarterfinal-a semifinal-1 ."
+      "roundof16-3 quarterfinal-b semifinal-1 final"
+      "roundof16-4 quarterfinal-b semifinal-1 final"
+      "roundof16-5 quarterfinal-c semifinal-2 final"
+      "roundof16-6 quarterfinal-c semifinal-2 final"
+      "roundof16-7 quarterfinal-d semifinal-2 ."
+      "roundof16-8 quarterfinal-d semifinal-2 third-place";
+    .final {
+      grid-area: final;
+    }
+
+    .roundof16-1 {
+      grid-area: roundof16-1;
+    }
+
+    .roundof16-2 {
+      grid-area: roundof16-2;
+    }
+
+    .roundof16-3 {
+      grid-area: roundof16-3;
+    }
+
+    .roundof16-4 {
+      grid-area: roundof16-4;
+    }
+
+    .roundof16-5 {
+      grid-area: roundof16-5;
+    }
+
+    .roundof16-6 {
+      grid-area: roundof16-6;
+    }
+
+    .roundof16-7 {
+      grid-area: roundof16-7;
+    }
+
+    .roundof16-8 {
+      grid-area: roundof16-8;
+    }
+
+    .quarterfinal-a {
+      grid-area: quarterfinal-a;
+    }
+
+    .quarterfinal-b {
+      grid-area: quarterfinal-b;
+    }
+
+    .quarterfinal-c {
+      grid-area: quarterfinal-c;
+    }
+
+    .quarterfinal-d {
+      grid-area: quarterfinal-d;
+    }
+
+    .semifinal-1 {
+      grid-area: semifinal-1;
+    }
+
+    .semifinal-2 {
+      grid-area: semifinal-2;
+    }
+
+    .final {
+      border-style: double;
+      grid-area: final;
+    }
+
+    .third-place {
+      grid-area: third-place;
+    }
+  }
+}
+
+.playoff-table {
+  display: none;
+}
+
+/* grid de la serie de playoff*/
+
+@media screen and (max-width: 800px) {
+  .container-fixture {
+    .playoff {
+      display: none;
+    }
+  }
+
+  .playoff-table {
+    display: unset;
+  }
+
+  .fixture-item {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .fixture-item {
+    font-size: 10px;
+  }
+}

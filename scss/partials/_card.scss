@@ -1,0 +1,37 @@
+/* estilos cards */
+.card {
+  background: rgba(00, 00, 00, 0.5);
+}
+
+.card-half {
+  margin: 5rem;
+  width: 50%;
+}
+
+.card-full {
+  text-align: justify;
+  width: 100%;
+}
+
+.card-text {
+  font-size: 1.5rem;
+}
+
+/* clase para tirar las cards a la derecha */
+
+.position-right {
+  margin-left: auto;
+}
+
+@media screen and (max-width: 800px) {
+  .card {
+    flex-grow: 1;
+    margin: 1rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .card-text {
+    font-size: 1rem;
+  }
+}

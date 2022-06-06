@@ -1,769 +1,783 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link href="http://fonts.cdnfonts.com/css/qatar2022" rel="stylesheet" />
+    <title>Fixture 🗓</title>
+  </head>
 
-<head>
-   <meta charset="UTF-8" />
-   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-   <link rel="stylesheet" href="../estilos/index.css" />
-   <link href="http://fonts.cdnfonts.com/css/qatar2022" rel="stylesheet" />
-   <title>Fixture 🗓</title>
-</head>
-
-<body>
-   <header class="header grid-header">
+  <body>
+    <header class="header grid-header">
       <!--Nav bar del header -->
-      <nav class="navbar navbar-expand-lg p-3 bg-light" style="--bs-bg-opacity: .1;">
-         <div class="container-fluid p-1">
-            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
-               data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-               aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon hamburger"></span>
-            </button>
-            <a class="navbar-brand" href="../index.html">
-               Qatar 2022
-            </a>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-               <div class="navbar-nav mx-5 flex-grow-1 justify-content-between">
-                  <a class="nav-link" href="../index.html">Inicio</a>
-                  <a class="nav-link" href="../index.html#qatar">Qatar</a>
-                  <a class="nav-link" href="../index.html#stadiums">Estadios</a>
-                  <a class="nav-link" href="../index.html#teams">Equipos</a>
-               </div>
+      <nav
+        class="navbar navbar-expand-lg p-3 bg-light"
+        style="--bs-bg-opacity: 0.1"
+      >
+        <div class="container-fluid p-1">
+          <button
+            class="navbar-toggler bg-light"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon hamburger"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html"> Qatar 2022 </a>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav mx-5 flex-grow-1 justify-content-between">
+              <a class="nav-link" href="../index.html">Inicio</a>
+              <a class="nav-link" href="../index.html#qatar">Qatar</a>
+              <a class="nav-link" href="../index.html#stadiums">Estadios</a>
+              <a class="nav-link" href="../index.html#teams">Equipos</a>
             </div>
-         </div>
+          </div>
+        </div>
       </nav>
-   </header>
-   <main>
+    </header>
+    <main>
       <!-- Conteendor padre flex -->
       <div class="container-fixture d-flex flex-column">
-         <!-- contenedor hijo flex row -->
-         <div class="fixture">
-            <div class="fixture-item">
-               <h3>Grupo A</h3>
-               <table class="table table-striped bg-light" summary="Grupo A">
-                  <thead>
-                     <th>Dia</th>
-                     <th>Hora (ARG)</th>
-                     <th>Local</th>
-                     <th>Visitante</th>
-                     <th>Estadio</th>
-                  </thead>
-                  <tbody>
-                     <tr>
-                        <td>Lunes 21/11</td>
-                        <td>07:00</td>
-                        <td>Senegal</td>
-                        <td>Holanda</td>
-                        <td>Al Khalifa</td>
-                     </tr>
-                     <tr>
-                        <td>Lunes 21/11</td>
-                        <td>13:00</td>
-                        <td>Qatar</td>
-                        <td>Ecuador</td>
-                        <td>Al Bayt</td>
-                     </tr>
-                     <tr>
-                        <td>Viernes 25/11</td>
-                        <td>10:00</td>
-                        <td>Qatar</td>
-                        <td>Senegal</td>
-                        <td>Al Thumama</td>
-                     </tr>
-                     <tr>
-                        <td>Viernes 25-11</td>
-                        <td>13:00</td>
-                        <td>Holanda</td>
-                        <td>Ecuador</td>
-                        <td>Al Khalifa</td>
-                     </tr>
-                     <tr>
-                        <td>Martes 29-11</td>
-                        <td>12:00</td>
-                        <td>Holanda</td>
-                        <td>Qatar</td>
-                        <td>Al Bayt</td>
-                     </tr>
-                     <tr>
-                        <td>Martes 29-11</td>
-                        <td>12:00</td>
-                        <td>Ecuador</td>
-                        <td>Senegal</td>
-                        <td>Al Khalifa</td>
-                     </tr>
-                  </tbody>
-               </table>
-            </div>
-            <div class="fixture-item">
-               <h3>Grupo B</h3>
-               <table class="table table-striped bg-light" summary="Grupo A">
-                  <thead>
-                     <th>Dia</th>
-                     <th>Hora (ARG)</th>
-                     <th>Local</th>
-                     <th>Visitante</th>
-                     <th>Estadio</th>
-                  </thead>
-                  <tbody>
-                     <tr>
-                        <td>Lunes 21/11</td>
-                        <td>07:00</td>
-                        <td>Senegal</td>
-                        <td>Holanda</td>
-                        <td>Al Khalifa</td>
-                     </tr>
-                     <tr>
-                        <td>Lunes 21/11</td>
-                        <td>13:00</td>
-                        <td>Qatar</td>
-                        <td>Ecuador</td>
-                        <td>Al Bayt</td>
-                     </tr>
-                     <tr>
-                        <td>Viernes 25/11</td>
-                        <td>10:00</td>
-                        <td>Qatar</td>
-                        <td>Senegal</td>
-                        <td>Al Thumama</td>
-                     </tr>
-                     <tr>
-                        <td>Viernes 25-11</td>
-                        <td>13:00</td>
-                        <td>Holanda</td>
-                        <td>Ecuador</td>
-                        <td>Al Khalifa</td>
-                     </tr>
-                     <tr>
-                        <td>Martes 29-11</td>
-                        <td>12:00</td>
-                        <td>Holanda</td>
-                        <td>Qatar</td>
-                        <td>Al Bayt</td>
-                     </tr>
-                     <tr>
-                        <td>Martes 29-11</td>
-                        <td>12:00</td>
-                        <td>Ecuador</td>
-                        <td>Senegal</td>
-                        <td>Al Khalifa</td>
-                     </tr>
-                  </tbody>
-               </table>
-            </div>
-            <div class="fixture-item">
-               <h3>Grupo C</h3>
-               <table class="table table-striped bg-light" summary="Grupo A">
-                  <thead>
-                     <th>Dia</th>
-                     <th>Hora (ARG)</th>
-                     <th>Local</th>
-                     <th>Visitante</th>
-                     <th>Estadio</th>
-                  </thead>
-                  <tbody>
-                     <tr>
-                        <td>Lunes 21/11</td>
-                        <td>07:00</td>
-                        <td>Senegal</td>
-                        <td>Holanda</td>
-                        <td>Al Khalifa</td>
-                     </tr>
-                     <tr>
-                        <td>Lunes 21/11</td>
-                        <td>13:00</td>
-                        <td>Qatar</td>
-                        <td>Ecuador</td>
-                        <td>Al Bayt</td>
-                     </tr>
-                     <tr>
-                        <td>Viernes 25/11</td>
-                        <td>10:00</td>
-                        <td>Qatar</td>
-                        <td>Senegal</td>
-                        <td>Al Thumama</td>
-                     </tr>
-                     <tr>
-                        <td>Viernes 25-11</td>
-                        <td>13:00</td>
-                        <td>Holanda</td>
-                        <td>Ecuador</td>
-                        <td>Al Khalifa</td>
-                     </tr>
-                     <tr>
-                        <td>Martes 29-11</td>
-                        <td>12:00</td>
-                        <td>Holanda</td>
-                        <td>Qatar</td>
-                        <td>Al Bayt</td>
-                     </tr>
-                     <tr>
-                        <td>Martes 29-11</td>
-                        <td>12:00</td>
-                        <td>Ecuador</td>
-                        <td>Senegal</td>
-                        <td>Al Khalifa</td>
-                     </tr>
-                  </tbody>
-               </table>
-            </div>
-            <div class="fixture-item">
-               <h3>Grupo D</h3>
-               <table class="table table-striped bg-light" summary="Grupo A">
-                  <thead>
-                     <th>Dia</th>
-                     <th>Hora (ARG)</th>
-                     <th>Local</th>
-                     <th>Visitante</th>
-                     <th>Estadio</th>
-                  </thead>
-                  <tbody>
-                     <tr>
-                        <td>Lunes 21/11</td>
-                        <td>07:00</td>
-                        <td>Senegal</td>
-                        <td>Holanda</td>
-                        <td>Al Khalifa</td>
-                     </tr>
-                     <tr>
-                        <td>Lunes 21/11</td>
-                        <td>13:00</td>
-                        <td>Qatar</td>
-                        <td>Ecuador</td>
-                        <td>Al Bayt</td>
-                     </tr>
-                     <tr>
-                        <td>Viernes 25/11</td>
-                        <td>10:00</td>
-                        <td>Qatar</td>
-                        <td>Senegal</td>
-                        <td>Al Thumama</td>
-                     </tr>
-                     <tr>
-                        <td>Viernes 25-11</td>
-                        <td>13:00</td>
-                        <td>Holanda</td>
-                        <td>Ecuador</td>
-                        <td>Al Khalifa</td>
-                     </tr>
-                     <tr>
-                        <td>Martes 29-11</td>
-                        <td>12:00</td>
-                        <td>Holanda</td>
-                        <td>Qatar</td>
-                        <td>Al Bayt</td>
-                     </tr>
-                     <tr>
-                        <td>Martes 29-11</td>
-                        <td>12:00</td>
-                        <td>Ecuador</td>
-                        <td>Senegal</td>
-                        <td>Al Khalifa</td>
-                     </tr>
-                  </tbody>
-               </table>
-            </div>
-            <div class="fixture-item">
-               <h3>Grupo E</h3>
-               <table class="table table-striped bg-light" summary="Grupo A">
-                  <thead>
-                     <th>Dia</th>
-                     <th>Hora (ARG)</th>
-                     <th>Local</th>
-                     <th>Visitante</th>
-                     <th>Estadio</th>
-                  </thead>
-                  <tbody>
-                     <tr>
-                        <td>Lunes 21/11</td>
-                        <td>07:00</td>
-                        <td>Senegal</td>
-                        <td>Holanda</td>
-                        <td>Al Khalifa</td>
-                     </tr>
-                     <tr>
-                        <td>Lunes 21/11</td>
-                        <td>13:00</td>
-                        <td>Qatar</td>
-                        <td>Ecuador</td>
-                        <td>Al Bayt</td>
-                     </tr>
-                     <tr>
-                        <td>Viernes 25/11</td>
-                        <td>10:00</td>
-                        <td>Qatar</td>
-                        <td>Senegal</td>
-                        <td>Al Thumama</td>
-                     </tr>
-                     <tr>
-                        <td>Viernes 25-11</td>
-                        <td>13:00</td>
-                        <td>Holanda</td>
-                        <td>Ecuador</td>
-                        <td>Al Khalifa</td>
-                     </tr>
-                     <tr>
-                        <td>Martes 29-11</td>
-                        <td>12:00</td>
-                        <td>Holanda</td>
-                        <td>Qatar</td>
-                        <td>Al Bayt</td>
-                     </tr>
-                     <tr>
-                        <td>Martes 29-11</td>
-                        <td>12:00</td>
-                        <td>Ecuador</td>
-                        <td>Senegal</td>
-                        <td>Al Khalifa</td>
-                     </tr>
-                  </tbody>
-               </table>
-            </div>
-            <div class="fixture-item">
-               <h3>Grupo F</h3>
-               <table class="table table-striped bg-light" summary="Grupo A">
-                  <thead>
-                     <th>Dia</th>
-                     <th>Hora (ARG)</th>
-                     <th>Local</th>
-                     <th>Visitante</th>
-                     <th>Estadio</th>
-                  </thead>
-                  <tbody>
-                     <tr>
-                        <td>Lunes 21/11</td>
-                        <td>07:00</td>
-                        <td>Senegal</td>
-                        <td>Holanda</td>
-                        <td>Al Khalifa</td>
-                     </tr>
-                     <tr>
-                        <td>Lunes 21/11</td>
-                        <td>13:00</td>
-                        <td>Qatar</td>
-                        <td>Ecuador</td>
-                        <td>Al Bayt</td>
-                     </tr>
-                     <tr>
-                        <td>Viernes 25/11</td>
-                        <td>10:00</td>
-                        <td>Qatar</td>
-                        <td>Senegal</td>
-                        <td>Al Thumama</td>
-                     </tr>
-                     <tr>
-                        <td>Viernes 25-11</td>
-                        <td>13:00</td>
-                        <td>Holanda</td>
-                        <td>Ecuador</td>
-                        <td>Al Khalifa</td>
-                     </tr>
-                     <tr>
-                        <td>Martes 29-11</td>
-                        <td>12:00</td>
-                        <td>Holanda</td>
-                        <td>Qatar</td>
-                        <td>Al Bayt</td>
-                     </tr>
-                     <tr>
-                        <td>Martes 29-11</td>
-                        <td>12:00</td>
-                        <td>Ecuador</td>
-                        <td>Senegal</td>
-                        <td>Al Khalifa</td>
-                     </tr>
-                  </tbody>
-               </table>
-            </div>
-            <div class="fixture-item">
-               <h3>Grupo G</h3>
-               <table class="table table-striped bg-light" summary="Grupo A">
-                  <thead>
-                     <th>Dia</th>
-                     <th>Hora (ARG)</th>
-                     <th>Local</th>
-                     <th>Visitante</th>
-                     <th>Estadio</th>
-                  </thead>
-                  <tbody>
-                     <tr>
-                        <td>Lunes 21/11</td>
-                        <td>07:00</td>
-                        <td>Senegal</td>
-                        <td>Holanda</td>
-                        <td>Al Khalifa</td>
-                     </tr>
-                     <tr>
-                        <td>Lunes 21/11</td>
-                        <td>13:00</td>
-                        <td>Qatar</td>
-                        <td>Ecuador</td>
-                        <td>Al Bayt</td>
-                     </tr>
-                     <tr>
-                        <td>Viernes 25/11</td>
-                        <td>10:00</td>
-                        <td>Qatar</td>
-                        <td>Senegal</td>
-                        <td>Al Thumama</td>
-                     </tr>
-                     <tr>
-                        <td>Viernes 25-11</td>
-                        <td>13:00</td>
-                        <td>Holanda</td>
-                        <td>Ecuador</td>
-                        <td>Al Khalifa</td>
-                     </tr>
-                     <tr>
-                        <td>Martes 29-11</td>
-                        <td>12:00</td>
-                        <td>Holanda</td>
-                        <td>Qatar</td>
-                        <td>Al Bayt</td>
-                     </tr>
-                     <tr>
-                        <td>Martes 29-11</td>
-                        <td>12:00</td>
-                        <td>Ecuador</td>
-                        <td>Senegal</td>
-                        <td>Al Khalifa</td>
-                     </tr>
-                  </tbody>
-               </table>
-            </div>
-            <div class="fixture-item">
-               <h3>Grupo H</h3>
-               <table class="table table-striped bg-light" summary="Grupo A">
-                  <thead>
-                     <th>Dia</th>
-                     <th>Hora (ARG)</th>
-                     <th>Local</th>
-                     <th>Visitante</th>
-                     <th>Estadio</th>
-                  </thead>
-                  <tbody>
-                     <tr>
-                        <td>Lunes 21/11</td>
-                        <td>07:00</td>
-                        <td>Senegal</td>
-                        <td>Holanda</td>
-                        <td>Al Khalifa</td>
-                     </tr>
-                     <tr>
-                        <td>Lunes 21/11</td>
-                        <td>13:00</td>
-                        <td>Qatar</td>
-                        <td>Ecuador</td>
-                        <td>Al Bayt</td>
-                     </tr>
-                     <tr>
-                        <td>Viernes 25/11</td>
-                        <td>10:00</td>
-                        <td>Qatar</td>
-                        <td>Senegal</td>
-                        <td>Al Thumama</td>
-                     </tr>
-                     <tr>
-                        <td>Viernes 25-11</td>
-                        <td>13:00</td>
-                        <td>Holanda</td>
-                        <td>Ecuador</td>
-                        <td>Al Khalifa</td>
-                     </tr>
-                     <tr>
-                        <td>Martes 29-11</td>
-                        <td>12:00</td>
-                        <td>Holanda</td>
-                        <td>Qatar</td>
-                        <td>Al Bayt</td>
-                     </tr>
-                     <tr>
-                        <td>Martes 29-11</td>
-                        <td>12:00</td>
-                        <td>Ecuador</td>
-                        <td>Senegal</td>
-                        <td>Al Khalifa</td>
-                     </tr>
-                  </tbody>
-               </table>
-            </div>
-            <!-- solo visible en mobile -->
-            <div class="fixture-item playoff-table">
-               <h3>8vos de Final</h3>
-               <table class="table table-striped bg-light" summary="Grupo A">
-                  <thead>
-                     <th>Dia</th>
-                     <th>Hora (ARG)</th>
-                     <th>Local</th>
-                     <th>Visitante</th>
-                     <th>Estadio</th>
-                  </thead>
-                  <tbody>
-                     <tr>
-                        <td>Lunes 21/11</td>
-                        <td>07:00</td>
-                        <td>1A</td>
-                        <td>2B</td>
-                        <td>Al Khalifa</td>
-                     </tr>
-                     <tr>
-                        <td>Lunes 21/11</td>
-                        <td>13:00</td>
-                        <td>2A</td>
-                        <td>1B</td>
-                        <td>Al Bayt</td>
-                     </tr>
-                     <tr>
-                        <td>Viernes 25/11</td>
-                        <td>10:00</td>
-                        <td>1C</td>
-                        <td>2D</td>
-                        <td>Al Thumama</td>
-                     </tr>
-                     <tr>
-                        <td>Viernes 25-11</td>
-                        <td>13:00</td>
-                        <td>2C</td>
-                        <td>1D</td>
-                        <td>Al Khalifa</td>
-                     </tr>
-                     <tr>
-                        <td>Martes 29-11</td>
-                        <td>12:00</td>
-                        <td>1E</td>
-                        <td>2F</td>
-                        <td>Al Bayt</td>
-                     </tr>
-                     <tr>
-                        <td>Martes 29-11</td>
-                        <td>12:00</td>
-                        <td>2E</td>
-                        <td>1F</td>
-                        <td>Al Khalifa</td>
-                     </tr>
-                     <tr>
-                        <td>Martes 29-11</td>
-                        <td>12:00</td>
-                        <td>1G</td>
-                        <td>2H</td>
-                        <td>Al Bayt</td>
-                     </tr>
-                     <tr>
-                        <td>Martes 29-11</td>
-                        <td>12:00</td>
-                        <td>2H</td>
-                        <td>1H</td>
-                        <td>Al Khalifa</td>
-                     </tr>
-                  </tbody>
-               </table>
-            </div>
-            <!-- solo visible en mobile -->
-            <div class="fixture-item playoff-table">
-               <h3>Cuartos de final</h3>
-               <table class="table table-striped bg-light" summary="Grupo A">
-                  <thead>
-                     <th>Dia</th>
-                     <th>Hora (ARG)</th>
-                     <th>Local</th>
-                     <th>Visitante</th>
-                     <th>Estadio</th>
-                  </thead>
-                  <tbody>
-                     <tr>
-                        <td>Lunes 21/11</td>
-                        <td>07:00</td>
-                        <td>1A</td>
-                        <td>2B</td>
-                        <td>Al Khalifa</td>
-                     </tr>
-                     <tr>
-                        <td>Lunes 21/11</td>
-                        <td>13:00</td>
-                        <td>2A</td>
-                        <td>1B</td>
-                        <td>Al Bayt</td>
-                     </tr>
-                     <tr>
-                        <td>Viernes 25/11</td>
-                        <td>10:00</td>
-                        <td>1C</td>
-                        <td>2D</td>
-                        <td>Al Thumama</td>
-                     </tr>
-                     <tr>
-                        <td>Viernes 25-11</td>
-                        <td>13:00</td>
-                        <td>2C</td>
-                        <td>1D</td>
-                        <td>Al Khalifa</td>
-                     </tr>
-                  </tbody>
-               </table>
-            </div>
-            <!-- solo visible en mobile -->
-            <div class="fixture-item playoff-table">
-               <h3>Semifinales</h3>
-               <table class="table table-striped bg-light" summary="Grupo A">
-                  <thead>
-                     <th>Dia</th>
-                     <th>Hora (ARG)</th>
-                     <th>Local</th>
-                     <th>Visitante</th>
-                     <th>Estadio</th>
-                  </thead>
-                  <tbody>
-                     <tr>
-                        <td>Lunes 21/11</td>
-                        <td>07:00</td>
-                        <td>1A</td>
-                        <td>2B</td>
-                        <td>Al Khalifa</td>
-                     </tr>
-                     <tr>
-                        <td>Lunes 21/11</td>
-                        <td>13:00</td>
-                        <td>2A</td>
-                        <td>1B</td>
-                        <td>Al Bayt</td>
-                     </tr>
-                  </tbody>
-               </table>
-            </div>
-            <!-- solo visible en mobile -->
-            <div class="fixture-item playoff-table">
-               <h3>Final</h3>
-               <table class="table table-striped bg-light" summary="Grupo A">
-                  <thead>
-                     <th>Dia</th>
-                     <th>Hora (ARG)</th>
-                     <th>Local</th>
-                     <th>Visitante</th>
-                     <th>Estadio</th>
-                  </thead>
-                  <tbody>
-                     <tr>
-                        <td>Lunes 21/11</td>
-                        <td>13:00</td>
-                        <td>2A</td>
-                        <td>1B</td>
-                        <td>Al Bayt</td>
-                     </tr>
-                  </tbody>
-               </table>
-            </div>
-            <!-- solo visible en mobile -->
-            <div class="fixture-item playoff-table">
-               <h3>3er Puesto</h3>
-               <table class="table table-striped bg-light" summary="Grupo A">
-                  <thead>
-                     <th>Dia</th>
-                     <th>Hora (ARG)</th>
-                     <th>Local</th>
-                     <th>Visitante</th>
-                     <th>Estadio</th>
-                  </thead>
-                  <tbody>
-                     <tr>
-                        <td>Lunes 21/11</td>
-                        <td>13:00</td>
-                        <td>2A</td>
-                        <td>1B</td>
-                        <td>Al Bayt</td>
-                     </tr>
-                  </tbody>
-               </table>
-            </div>
-         </div>
-         <!-- grid para las llaves de playoff -->
-         <div class="playoff">
-            <div class="third-place">
-               <div>5/12 - 12:00</div>
-               <div>semi-1 vs semi-2</div>
-               <div>974</div>
-            </div>
-            <div class="final">
-               <div>5/12 - 12:00</div>
-               <div>semi-1 vs semi-2</div>
-               <div>974</div>
-            </div>
-            <div class="semifinal-1">
-               <div>5/12 - 12:00</div>
-               <div>4tos-ab vs 4tos-cd</div>
-               <div>Education City</div>
-            </div>
-            <div class="semifinal-2">
-               <div>5/12 - 12:00</div>
-               <div>4tos-ef vs 4tos-gh</div>
-               <div>Education City</div>
-            </div>
-            <div class="quarterfinal-a">
-               <div>1/12 - 12:00</div>
-               <div>8vos-12 vs 8vos-34</div>
-               <div>Al Khalifa</div>
-            </div>
-            <div class="quarterfinal-b">
-               <div>1/12 - 12:00</div>
-               <div>8vos-56 vs 8vos-78</div>
-               <div>Al Khalifa</div>
-            </div>
-            <div class="quarterfinal-c">
-               <div>1/12 - 12:00</div>
-               <div>8vos-910 vs 8vos-1112</div>
-               <div>Al Khalifa</div>
-            </div>
-            <div class="quarterfinal-d">
-               <div>1/12 - 12:00</div>
-               <div>8vos-1314 vs 8vos-1516</div>
-               <div>Al Khalifa</div>
-            </div>
-            <div class="roundof16-1">
-               <div>1/12 - 12:00</div>
-               <div>1A vs 2B | Al Bayt</div>
-            </div>
-            <div class="roundof16-2">
-               <div>1/12 - 12:00</div>
-               <div>1A vs 2B | Al Bayt</div>
-            </div>
-            <div class="roundof16-3">
-               <div>1/12 - 12:00</div>
-               <div>1A vs 2B | Al Bayt</div>
-            </div>
-            <div class="roundof16-4">
-               <div>1/12 - 12:00</div>
-               <div>1A vs 2B | Al Bayt</div>
-            </div>
-            <div class="roundof16-5">
-               <div>1/12 - 12:00</div>
-               <div>1A vs 2B | Al Bayt</div>
-            </div>
-            <div class="roundof16-6">
-               <div>1/12 - 12:00</div>
-               <div>1A vs 2B | Al Bayt</div>
-            </div>
-            <div class="roundof16-7">
-               <div>1/12 - 12:00</div>
-               <div>1A vs 2B | Al Bayt</div>
-            </div>
-            <div class="roundof16-8">
-               <div>1/12 - 12:00</div>
-               <div>1A vs 2B | Al Bayt</div>
-            </div>
-         </div>
+        <!-- contenedor hijo flex row -->
+        <div class="fixture">
+          <div class="fixture-item">
+            <h3>Grupo A</h3>
+            <table class="table table-striped bg-light" summary="Grupo A">
+              <thead>
+                <th>Dia</th>
+                <th>Hora (ARG)</th>
+                <th>Local</th>
+                <th>Visitante</th>
+                <th>Estadio</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Lunes 21/11</td>
+                  <td>07:00</td>
+                  <td>Senegal</td>
+                  <td>Holanda</td>
+                  <td>Al Khalifa</td>
+                </tr>
+                <tr>
+                  <td>Lunes 21/11</td>
+                  <td>13:00</td>
+                  <td>Qatar</td>
+                  <td>Ecuador</td>
+                  <td>Al Bayt</td>
+                </tr>
+                <tr>
+                  <td>Viernes 25/11</td>
+                  <td>10:00</td>
+                  <td>Qatar</td>
+                  <td>Senegal</td>
+                  <td>Al Thumama</td>
+                </tr>
+                <tr>
+                  <td>Viernes 25-11</td>
+                  <td>13:00</td>
+                  <td>Holanda</td>
+                  <td>Ecuador</td>
+                  <td>Al Khalifa</td>
+                </tr>
+                <tr>
+                  <td>Martes 29-11</td>
+                  <td>12:00</td>
+                  <td>Holanda</td>
+                  <td>Qatar</td>
+                  <td>Al Bayt</td>
+                </tr>
+                <tr>
+                  <td>Martes 29-11</td>
+                  <td>12:00</td>
+                  <td>Ecuador</td>
+                  <td>Senegal</td>
+                  <td>Al Khalifa</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="fixture-item">
+            <h3>Grupo B</h3>
+            <table class="table table-striped bg-light" summary="Grupo A">
+              <thead>
+                <th>Dia</th>
+                <th>Hora (ARG)</th>
+                <th>Local</th>
+                <th>Visitante</th>
+                <th>Estadio</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Lunes 21/11</td>
+                  <td>07:00</td>
+                  <td>Senegal</td>
+                  <td>Holanda</td>
+                  <td>Al Khalifa</td>
+                </tr>
+                <tr>
+                  <td>Lunes 21/11</td>
+                  <td>13:00</td>
+                  <td>Qatar</td>
+                  <td>Ecuador</td>
+                  <td>Al Bayt</td>
+                </tr>
+                <tr>
+                  <td>Viernes 25/11</td>
+                  <td>10:00</td>
+                  <td>Qatar</td>
+                  <td>Senegal</td>
+                  <td>Al Thumama</td>
+                </tr>
+                <tr>
+                  <td>Viernes 25-11</td>
+                  <td>13:00</td>
+                  <td>Holanda</td>
+                  <td>Ecuador</td>
+                  <td>Al Khalifa</td>
+                </tr>
+                <tr>
+                  <td>Martes 29-11</td>
+                  <td>12:00</td>
+                  <td>Holanda</td>
+                  <td>Qatar</td>
+                  <td>Al Bayt</td>
+                </tr>
+                <tr>
+                  <td>Martes 29-11</td>
+                  <td>12:00</td>
+                  <td>Ecuador</td>
+                  <td>Senegal</td>
+                  <td>Al Khalifa</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="fixture-item">
+            <h3>Grupo C</h3>
+            <table class="table table-striped bg-light" summary="Grupo A">
+              <thead>
+                <th>Dia</th>
+                <th>Hora (ARG)</th>
+                <th>Local</th>
+                <th>Visitante</th>
+                <th>Estadio</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Lunes 21/11</td>
+                  <td>07:00</td>
+                  <td>Senegal</td>
+                  <td>Holanda</td>
+                  <td>Al Khalifa</td>
+                </tr>
+                <tr>
+                  <td>Lunes 21/11</td>
+                  <td>13:00</td>
+                  <td>Qatar</td>
+                  <td>Ecuador</td>
+                  <td>Al Bayt</td>
+                </tr>
+                <tr>
+                  <td>Viernes 25/11</td>
+                  <td>10:00</td>
+                  <td>Qatar</td>
+                  <td>Senegal</td>
+                  <td>Al Thumama</td>
+                </tr>
+                <tr>
+                  <td>Viernes 25-11</td>
+                  <td>13:00</td>
+                  <td>Holanda</td>
+                  <td>Ecuador</td>
+                  <td>Al Khalifa</td>
+                </tr>
+                <tr>
+                  <td>Martes 29-11</td>
+                  <td>12:00</td>
+                  <td>Holanda</td>
+                  <td>Qatar</td>
+                  <td>Al Bayt</td>
+                </tr>
+                <tr>
+                  <td>Martes 29-11</td>
+                  <td>12:00</td>
+                  <td>Ecuador</td>
+                  <td>Senegal</td>
+                  <td>Al Khalifa</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="fixture-item">
+            <h3>Grupo D</h3>
+            <table class="table table-striped bg-light" summary="Grupo A">
+              <thead>
+                <th>Dia</th>
+                <th>Hora (ARG)</th>
+                <th>Local</th>
+                <th>Visitante</th>
+                <th>Estadio</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Lunes 21/11</td>
+                  <td>07:00</td>
+                  <td>Senegal</td>
+                  <td>Holanda</td>
+                  <td>Al Khalifa</td>
+                </tr>
+                <tr>
+                  <td>Lunes 21/11</td>
+                  <td>13:00</td>
+                  <td>Qatar</td>
+                  <td>Ecuador</td>
+                  <td>Al Bayt</td>
+                </tr>
+                <tr>
+                  <td>Viernes 25/11</td>
+                  <td>10:00</td>
+                  <td>Qatar</td>
+                  <td>Senegal</td>
+                  <td>Al Thumama</td>
+                </tr>
+                <tr>
+                  <td>Viernes 25-11</td>
+                  <td>13:00</td>
+                  <td>Holanda</td>
+                  <td>Ecuador</td>
+                  <td>Al Khalifa</td>
+                </tr>
+                <tr>
+                  <td>Martes 29-11</td>
+                  <td>12:00</td>
+                  <td>Holanda</td>
+                  <td>Qatar</td>
+                  <td>Al Bayt</td>
+                </tr>
+                <tr>
+                  <td>Martes 29-11</td>
+                  <td>12:00</td>
+                  <td>Ecuador</td>
+                  <td>Senegal</td>
+                  <td>Al Khalifa</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="fixture-item">
+            <h3>Grupo E</h3>
+            <table class="table table-striped bg-light" summary="Grupo A">
+              <thead>
+                <th>Dia</th>
+                <th>Hora (ARG)</th>
+                <th>Local</th>
+                <th>Visitante</th>
+                <th>Estadio</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Lunes 21/11</td>
+                  <td>07:00</td>
+                  <td>Senegal</td>
+                  <td>Holanda</td>
+                  <td>Al Khalifa</td>
+                </tr>
+                <tr>
+                  <td>Lunes 21/11</td>
+                  <td>13:00</td>
+                  <td>Qatar</td>
+                  <td>Ecuador</td>
+                  <td>Al Bayt</td>
+                </tr>
+                <tr>
+                  <td>Viernes 25/11</td>
+                  <td>10:00</td>
+                  <td>Qatar</td>
+                  <td>Senegal</td>
+                  <td>Al Thumama</td>
+                </tr>
+                <tr>
+                  <td>Viernes 25-11</td>
+                  <td>13:00</td>
+                  <td>Holanda</td>
+                  <td>Ecuador</td>
+                  <td>Al Khalifa</td>
+                </tr>
+                <tr>
+                  <td>Martes 29-11</td>
+                  <td>12:00</td>
+                  <td>Holanda</td>
+                  <td>Qatar</td>
+                  <td>Al Bayt</td>
+                </tr>
+                <tr>
+                  <td>Martes 29-11</td>
+                  <td>12:00</td>
+                  <td>Ecuador</td>
+                  <td>Senegal</td>
+                  <td>Al Khalifa</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="fixture-item">
+            <h3>Grupo F</h3>
+            <table class="table table-striped bg-light" summary="Grupo A">
+              <thead>
+                <th>Dia</th>
+                <th>Hora (ARG)</th>
+                <th>Local</th>
+                <th>Visitante</th>
+                <th>Estadio</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Lunes 21/11</td>
+                  <td>07:00</td>
+                  <td>Senegal</td>
+                  <td>Holanda</td>
+                  <td>Al Khalifa</td>
+                </tr>
+                <tr>
+                  <td>Lunes 21/11</td>
+                  <td>13:00</td>
+                  <td>Qatar</td>
+                  <td>Ecuador</td>
+                  <td>Al Bayt</td>
+                </tr>
+                <tr>
+                  <td>Viernes 25/11</td>
+                  <td>10:00</td>
+                  <td>Qatar</td>
+                  <td>Senegal</td>
+                  <td>Al Thumama</td>
+                </tr>
+                <tr>
+                  <td>Viernes 25-11</td>
+                  <td>13:00</td>
+                  <td>Holanda</td>
+                  <td>Ecuador</td>
+                  <td>Al Khalifa</td>
+                </tr>
+                <tr>
+                  <td>Martes 29-11</td>
+                  <td>12:00</td>
+                  <td>Holanda</td>
+                  <td>Qatar</td>
+                  <td>Al Bayt</td>
+                </tr>
+                <tr>
+                  <td>Martes 29-11</td>
+                  <td>12:00</td>
+                  <td>Ecuador</td>
+                  <td>Senegal</td>
+                  <td>Al Khalifa</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="fixture-item">
+            <h3>Grupo G</h3>
+            <table class="table table-striped bg-light" summary="Grupo A">
+              <thead>
+                <th>Dia</th>
+                <th>Hora (ARG)</th>
+                <th>Local</th>
+                <th>Visitante</th>
+                <th>Estadio</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Lunes 21/11</td>
+                  <td>07:00</td>
+                  <td>Senegal</td>
+                  <td>Holanda</td>
+                  <td>Al Khalifa</td>
+                </tr>
+                <tr>
+                  <td>Lunes 21/11</td>
+                  <td>13:00</td>
+                  <td>Qatar</td>
+                  <td>Ecuador</td>
+                  <td>Al Bayt</td>
+                </tr>
+                <tr>
+                  <td>Viernes 25/11</td>
+                  <td>10:00</td>
+                  <td>Qatar</td>
+                  <td>Senegal</td>
+                  <td>Al Thumama</td>
+                </tr>
+                <tr>
+                  <td>Viernes 25-11</td>
+                  <td>13:00</td>
+                  <td>Holanda</td>
+                  <td>Ecuador</td>
+                  <td>Al Khalifa</td>
+                </tr>
+                <tr>
+                  <td>Martes 29-11</td>
+                  <td>12:00</td>
+                  <td>Holanda</td>
+                  <td>Qatar</td>
+                  <td>Al Bayt</td>
+                </tr>
+                <tr>
+                  <td>Martes 29-11</td>
+                  <td>12:00</td>
+                  <td>Ecuador</td>
+                  <td>Senegal</td>
+                  <td>Al Khalifa</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="fixture-item">
+            <h3>Grupo H</h3>
+            <table class="table table-striped bg-light" summary="Grupo A">
+              <thead>
+                <th>Dia</th>
+                <th>Hora (ARG)</th>
+                <th>Local</th>
+                <th>Visitante</th>
+                <th>Estadio</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Lunes 21/11</td>
+                  <td>07:00</td>
+                  <td>Senegal</td>
+                  <td>Holanda</td>
+                  <td>Al Khalifa</td>
+                </tr>
+                <tr>
+                  <td>Lunes 21/11</td>
+                  <td>13:00</td>
+                  <td>Qatar</td>
+                  <td>Ecuador</td>
+                  <td>Al Bayt</td>
+                </tr>
+                <tr>
+                  <td>Viernes 25/11</td>
+                  <td>10:00</td>
+                  <td>Qatar</td>
+                  <td>Senegal</td>
+                  <td>Al Thumama</td>
+                </tr>
+                <tr>
+                  <td>Viernes 25-11</td>
+                  <td>13:00</td>
+                  <td>Holanda</td>
+                  <td>Ecuador</td>
+                  <td>Al Khalifa</td>
+                </tr>
+                <tr>
+                  <td>Martes 29-11</td>
+                  <td>12:00</td>
+                  <td>Holanda</td>
+                  <td>Qatar</td>
+                  <td>Al Bayt</td>
+                </tr>
+                <tr>
+                  <td>Martes 29-11</td>
+                  <td>12:00</td>
+                  <td>Ecuador</td>
+                  <td>Senegal</td>
+                  <td>Al Khalifa</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- solo visible en mobile -->
+          <div class="fixture-item playoff-table">
+            <h3>8vos de Final</h3>
+            <table class="table table-striped bg-light" summary="Grupo A">
+              <thead>
+                <th>Dia</th>
+                <th>Hora (ARG)</th>
+                <th>Local</th>
+                <th>Visitante</th>
+                <th>Estadio</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Lunes 21/11</td>
+                  <td>07:00</td>
+                  <td>1A</td>
+                  <td>2B</td>
+                  <td>Al Khalifa</td>
+                </tr>
+                <tr>
+                  <td>Lunes 21/11</td>
+                  <td>13:00</td>
+                  <td>2A</td>
+                  <td>1B</td>
+                  <td>Al Bayt</td>
+                </tr>
+                <tr>
+                  <td>Viernes 25/11</td>
+                  <td>10:00</td>
+                  <td>1C</td>
+                  <td>2D</td>
+                  <td>Al Thumama</td>
+                </tr>
+                <tr>
+                  <td>Viernes 25-11</td>
+                  <td>13:00</td>
+                  <td>2C</td>
+                  <td>1D</td>
+                  <td>Al Khalifa</td>
+                </tr>
+                <tr>
+                  <td>Martes 29-11</td>
+                  <td>12:00</td>
+                  <td>1E</td>
+                  <td>2F</td>
+                  <td>Al Bayt</td>
+                </tr>
+                <tr>
+                  <td>Martes 29-11</td>
+                  <td>12:00</td>
+                  <td>2E</td>
+                  <td>1F</td>
+                  <td>Al Khalifa</td>
+                </tr>
+                <tr>
+                  <td>Martes 29-11</td>
+                  <td>12:00</td>
+                  <td>1G</td>
+                  <td>2H</td>
+                  <td>Al Bayt</td>
+                </tr>
+                <tr>
+                  <td>Martes 29-11</td>
+                  <td>12:00</td>
+                  <td>2H</td>
+                  <td>1H</td>
+                  <td>Al Khalifa</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- solo visible en mobile -->
+          <div class="fixture-item playoff-table">
+            <h3>Cuartos de final</h3>
+            <table class="table table-striped bg-light" summary="Grupo A">
+              <thead>
+                <th>Dia</th>
+                <th>Hora (ARG)</th>
+                <th>Local</th>
+                <th>Visitante</th>
+                <th>Estadio</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Lunes 21/11</td>
+                  <td>07:00</td>
+                  <td>1A</td>
+                  <td>2B</td>
+                  <td>Al Khalifa</td>
+                </tr>
+                <tr>
+                  <td>Lunes 21/11</td>
+                  <td>13:00</td>
+                  <td>2A</td>
+                  <td>1B</td>
+                  <td>Al Bayt</td>
+                </tr>
+                <tr>
+                  <td>Viernes 25/11</td>
+                  <td>10:00</td>
+                  <td>1C</td>
+                  <td>2D</td>
+                  <td>Al Thumama</td>
+                </tr>
+                <tr>
+                  <td>Viernes 25-11</td>
+                  <td>13:00</td>
+                  <td>2C</td>
+                  <td>1D</td>
+                  <td>Al Khalifa</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- solo visible en mobile -->
+          <div class="fixture-item playoff-table">
+            <h3>Semifinales</h3>
+            <table class="table table-striped bg-light" summary="Grupo A">
+              <thead>
+                <th>Dia</th>
+                <th>Hora (ARG)</th>
+                <th>Local</th>
+                <th>Visitante</th>
+                <th>Estadio</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Lunes 21/11</td>
+                  <td>07:00</td>
+                  <td>1A</td>
+                  <td>2B</td>
+                  <td>Al Khalifa</td>
+                </tr>
+                <tr>
+                  <td>Lunes 21/11</td>
+                  <td>13:00</td>
+                  <td>2A</td>
+                  <td>1B</td>
+                  <td>Al Bayt</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- solo visible en mobile -->
+          <div class="fixture-item playoff-table">
+            <h3>Final</h3>
+            <table class="table table-striped bg-light" summary="Grupo A">
+              <thead>
+                <th>Dia</th>
+                <th>Hora (ARG)</th>
+                <th>Local</th>
+                <th>Visitante</th>
+                <th>Estadio</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Lunes 21/11</td>
+                  <td>13:00</td>
+                  <td>2A</td>
+                  <td>1B</td>
+                  <td>Al Bayt</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- solo visible en mobile -->
+          <div class="fixture-item playoff-table">
+            <h3>3er Puesto</h3>
+            <table class="table table-striped bg-light" summary="Grupo A">
+              <thead>
+                <th>Dia</th>
+                <th>Hora (ARG)</th>
+                <th>Local</th>
+                <th>Visitante</th>
+                <th>Estadio</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Lunes 21/11</td>
+                  <td>13:00</td>
+                  <td>2A</td>
+                  <td>1B</td>
+                  <td>Al Bayt</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- grid para las llaves de playoff -->
+        <div class="playoff">
+          <div class="third-place">
+            <div>5/12 - 12:00</div>
+            <div>semi-1 vs semi-2</div>
+            <div>974</div>
+          </div>
+          <div class="final">
+            <div>5/12 - 12:00</div>
+            <div>semi-1 vs semi-2</div>
+            <div>974</div>
+          </div>
+          <div class="semifinal-1">
+            <div>5/12 - 12:00</div>
+            <div>4tos-ab vs 4tos-cd</div>
+            <div>Education City</div>
+          </div>
+          <div class="semifinal-2">
+            <div>5/12 - 12:00</div>
+            <div>4tos-ef vs 4tos-gh</div>
+            <div>Education City</div>
+          </div>
+          <div class="quarterfinal-a">
+            <div>1/12 - 12:00</div>
+            <div>8vos-12 vs 8vos-34</div>
+            <div>Al Khalifa</div>
+          </div>
+          <div class="quarterfinal-b">
+            <div>1/12 - 12:00</div>
+            <div>8vos-56 vs 8vos-78</div>
+            <div>Al Khalifa</div>
+          </div>
+          <div class="quarterfinal-c">
+            <div>1/12 - 12:00</div>
+            <div>8vos-910 vs 8vos-1112</div>
+            <div>Al Khalifa</div>
+          </div>
+          <div class="quarterfinal-d">
+            <div>1/12 - 12:00</div>
+            <div>8vos-1314 vs 8vos-1516</div>
+            <div>Al Khalifa</div>
+          </div>
+          <div class="roundof16-1">
+            <div>1/12 - 12:00</div>
+            <div>1A vs 2B | Al Bayt</div>
+          </div>
+          <div class="roundof16-2">
+            <div>1/12 - 12:00</div>
+            <div>1A vs 2B | Al Bayt</div>
+          </div>
+          <div class="roundof16-3">
+            <div>1/12 - 12:00</div>
+            <div>1A vs 2B | Al Bayt</div>
+          </div>
+          <div class="roundof16-4">
+            <div>1/12 - 12:00</div>
+            <div>1A vs 2B | Al Bayt</div>
+          </div>
+          <div class="roundof16-5">
+            <div>1/12 - 12:00</div>
+            <div>1A vs 2B | Al Bayt</div>
+          </div>
+          <div class="roundof16-6">
+            <div>1/12 - 12:00</div>
+            <div>1A vs 2B | Al Bayt</div>
+          </div>
+          <div class="roundof16-7">
+            <div>1/12 - 12:00</div>
+            <div>1A vs 2B | Al Bayt</div>
+          </div>
+          <div class="roundof16-8">
+            <div>1/12 - 12:00</div>
+            <div>1A vs 2B | Al Bayt</div>
+          </div>
+        </div>
       </div>
-   </main>
-   <footer>
+    </main>
+    <footer>
       <!-- Nav bar del Footer -->
-      <nav class="nav justify-content-evenly bg-light" style="--bs-bg-opacity: .1;">
-         <a class="nav-link" href="https://www.fifa.com">Fifa sitio oficial</a>
-         <a class="nav-link" href="./contact.html">Contacto</a>
+      <nav
+        class="nav justify-content-evenly bg-light"
+        style="--bs-bg-opacity: 0.1"
+      >
+        <a class="nav-link" href="https://www.fifa.com">Fifa sitio oficial</a>
+        <a class="nav-link" href="./contact.html">Contacto</a>
       </nav>
-   </footer>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-      crossorigin="anonymous"></script>
-</body>
-
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

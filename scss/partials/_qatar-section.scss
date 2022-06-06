@@ -1,0 +1,63 @@
+/* QATAR */
+/* grid */
+.container-qatar {
+  margin: 10px;
+  width: 95%;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas:
+    "grid-title grid-title"
+    "aside stats"
+    "media1 media1"
+    "media2 media2";
+
+  .grid-title {
+    grid-area: grid-title;
+    height: auto;
+  }
+
+  .aside {
+    grid-area: aside;
+    height: auto;
+  }
+
+  .stats {
+    grid-area: stats;
+    height: auto;
+  }
+
+  .media1 {
+    grid-area: media1;
+    height: auto;
+  }
+
+  .media2 {
+    grid-area: media2;
+    iframe {
+      height: 700px;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container-qatar {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+      "grid-title"
+      "stats"
+      "aside"
+      "media1"
+      "media2";
+  }
+
+  .media2 {
+    iframe {
+      height: auto;
+      width: 100%;
+    }
+  }
+}

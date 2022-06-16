@@ -123,11 +123,11 @@ input[type="submit"] {
       height: 700px;
       width: 100%; }
 
-.carousel {
+/**.carousel {
   background-color: rgba(0, 0, 0, 0.068);
   height: auto !important;
-  align-content: center; }
-
+  align-content: center;
+}**/
 @media screen and (max-width: 800px) {
   .container-qatar {
     grid-template-columns: 1fr;
@@ -249,37 +249,85 @@ input[type="submit"] {
     .container-fixture .playoff .final {
       grid-area: final; }
     .container-fixture .playoff .roundof16-1 {
+      text-align: center;
+      font-size: 1rem;
+      background-color: rgba(204, 188, 188, 0.913);
       grid-area: roundof16-1; }
     .container-fixture .playoff .roundof16-2 {
+      text-align: center;
+      font-size: 1rem;
+      background-color: rgba(249, 204, 204, 0.882);
       grid-area: roundof16-2; }
     .container-fixture .playoff .roundof16-3 {
+      text-align: center;
+      font-size: 1rem;
+      background-color: rgba(204, 188, 188, 0.913);
       grid-area: roundof16-3; }
     .container-fixture .playoff .roundof16-4 {
+      text-align: center;
+      font-size: 1rem;
+      background-color: rgba(249, 204, 204, 0.882);
       grid-area: roundof16-4; }
     .container-fixture .playoff .roundof16-5 {
+      text-align: center;
+      font-size: 1rem;
+      background-color: rgba(204, 188, 188, 0.913);
       grid-area: roundof16-5; }
     .container-fixture .playoff .roundof16-6 {
+      text-align: center;
+      font-size: 1rem;
+      background-color: rgba(249, 204, 204, 0.882);
       grid-area: roundof16-6; }
     .container-fixture .playoff .roundof16-7 {
+      text-align: center;
+      font-size: 1rem;
+      background-color: rgba(204, 188, 188, 0.913);
       grid-area: roundof16-7; }
     .container-fixture .playoff .roundof16-8 {
+      text-align: center;
+      font-size: 1rem;
+      background-color: rgba(249, 204, 204, 0.882);
       grid-area: roundof16-8; }
     .container-fixture .playoff .quarterfinal-a {
+      text-align: center;
+      font-size: 1.2rem;
+      background-color: rgba(240, 170, 170, 0.4);
       grid-area: quarterfinal-a; }
     .container-fixture .playoff .quarterfinal-b {
+      text-align: center;
+      font-size: 1.2rem;
+      background-color: rgba(240, 170, 170, 0.4);
       grid-area: quarterfinal-b; }
     .container-fixture .playoff .quarterfinal-c {
+      text-align: center;
+      font-size: 1.2rem;
+      background-color: rgba(240, 170, 170, 0.4);
       grid-area: quarterfinal-c; }
     .container-fixture .playoff .quarterfinal-d {
+      text-align: center;
+      font-size: 1.2rem;
+      background-color: rgba(240, 170, 170, 0.4);
       grid-area: quarterfinal-d; }
     .container-fixture .playoff .semifinal-1 {
+      text-align: center;
+      font-size: 1.4rem;
+      background-color: rgba(193, 116, 116, 0.592);
       grid-area: semifinal-1; }
     .container-fixture .playoff .semifinal-2 {
+      text-align: center;
+      font-size: 1.4rem;
+      background-color: rgba(193, 116, 116, 0.592);
       grid-area: semifinal-2; }
     .container-fixture .playoff .final {
+      text-align: center;
+      font-size: 1.4rem;
+      background-color: rgba(184, 59, 59, 0.647);
       border-style: double;
       grid-area: final; }
     .container-fixture .playoff .third-place {
+      text-align: center;
+      font-size: 1.2rem;
+      background-color: rgba(193, 116, 116, 0.274);
       grid-area: third-place; }
 
 .playoff-table {

@@ -23,8 +23,6 @@
     height: 100%;
   }
 
-
-
   .stats {
     grid-area: stats;
     height: auto;
@@ -45,11 +43,11 @@
   }
 }
 
-.carousel {
+/**.carousel {
   background-color: rgba(0, 0, 0, 0.068);
   height: auto !important;
   align-content: center;
-}
+}**/
 
 
 @media screen and (max-width: 800px) {

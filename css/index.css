@@ -1,101 +1,78 @@
 * {
   padding: 0px;
   margin: 0px;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 html {
-  scroll-behavior: smooth;
-}
+  scroll-behavior: smooth; }
 
 body {
   background: linear-gradient(90deg, #b5b5b5 6%, white 64%, #830505 89%, black 98%);
   width: 100%;
-  font-family: "Qatar2022", sans-serif;
-}
+  font-family: "Qatar2022", sans-serif; }
 
 .navbar-brand {
   color: #846e26;
   font-size: 2.5rem;
   animation: font-animation;
   animation-duration: 5s;
-  animation-iteration-count: infinite;
-}
+  animation-iteration-count: infinite; }
 
 a {
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 .nav-link {
-  color: navy;
-}
-
-.nav-link:hover {
-  background-color: rgba(255, 255, 255, 0.479);
-  border-top-left-radius: 35%;
-  border-bottom-right-radius: 35%;
-}
+  color: navy; }
+  .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.479);
+    border-top-left-radius: 35%;
+    border-bottom-right-radius: 35%; }
 
 @keyframes font-animation {
   50% {
-    color: #c0a035;
-  }
-}
+    color: #c0a035; } }
 
 /* estilos cards */
 .card {
-  background: rgba(0, 0, 0, 0.5);
-}
+  background: rgba(0, 0, 0, 0.5); }
 
 .card-half {
   margin: 5rem;
-  width: 50%;
-}
+  width: 50%; }
 
 .card-full {
   text-align: justify;
-  width: 100%;
-}
+  width: 100%; }
 
 .card-text {
-  font-size: 1.5rem;
-}
+  font-size: 1.5rem; }
 
 /* clase para tirar las cards a la derecha */
 .position-right {
-  margin-left: auto;
-}
+  margin-left: auto; }
 
 @media screen and (max-width: 800px) {
   .card {
     flex-grow: 1;
-    margin: 1rem;
-  }
-}
+    margin: 1rem; } }
 
 @media screen and (max-width: 500px) {
   .card-text {
-    font-size: 1rem;
-  }
-}
+    font-size: 1rem; } }
 
 .form-section {
-  width: 100%;
-}
+  width: 100%; }
 
 .container-form {
   display: flex;
   flex-direction: column;
   margin: 10px;
-  width: 95%;
-}
-
-.container-form form {
-  align-content: center;
-  display: flex;
-  flex-direction: column;
-  margin: 10vh 10%;
-}
+  width: 95%; }
+  .container-form form {
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 10vh 10%; }
 
 input,
 select,
@@ -106,8 +83,7 @@ textarea {
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 4px;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 input[type="submit"] {
   width: 100%;
@@ -117,8 +93,7 @@ input[type="submit"] {
   margin: 8px 0;
   border: none;
   border-radius: 4px;
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 /* QATAR */
 /* grid */
@@ -129,54 +104,44 @@ input[type="submit"] {
   gap: 2rem;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: repeat(4, auto);
-  grid-template-areas: "grid-title grid-title" "aside stats" "media1 media1" "media2 media2";
-}
+  grid-template-areas: "grid-title grid-title" "aside stats" "media1 media1" "media2 media2"; }
+  .container-qatar .grid-title {
+    grid-area: grid-title;
+    height: auto !important; }
+  .container-qatar .aside {
+    grid-area: aside;
+    height: 100%; }
+  .container-qatar .stats {
+    grid-area: stats;
+    height: auto; }
+  .container-qatar .media1 {
+    grid-area: media1;
+    height: auto; }
+  .container-qatar .media2 {
+    grid-area: media2; }
+    .container-qatar .media2 iframe {
+      height: 700px;
+      width: 100%; }
 
-.container-qatar .grid-title {
-  grid-area: grid-title;
-  height: auto;
-}
-
-.container-qatar .aside {
-  grid-area: aside;
-  height: auto;
-}
-
-.container-qatar .stats {
-  grid-area: stats;
-  height: auto;
-}
-
-.container-qatar .media1 {
-  grid-area: media1;
-  height: auto;
-}
-
-.container-qatar .media2 {
-  grid-area: media2;
-}
-
-.container-qatar .media2 iframe {
-  height: 700px;
-  width: 100%;
-}
-
+/**.carousel {
+  background-color: rgba(0, 0, 0, 0.068);
+  height: auto !important;
+  align-content: center;
+}**/
 @media screen and (max-width: 800px) {
   .container-qatar {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, auto);
-    grid-template-areas: "grid-title" "stats" "aside" "media1" "media2";
-  }
+    grid-template-areas: "grid-title" "stats" "aside" "media1" "media2"; }
   .media2 iframe {
     height: auto;
-    width: 100%;
-  }
-}
+    width: 100%; }
+  .carousel {
+    font-size: 5px; } }
 
 /* ESTADIOS */
 .container-stadiums {
-  margin: 10px;
-}
+  margin: 10px; }
 
 .item-grid {
   margin-bottom: 50px;
@@ -184,95 +149,63 @@ input[type="submit"] {
   flex-direction: row;
   grid-template-columns: 1fr 5fr;
   grid-template-rows: auto auto 2fr;
-  grid-template-areas: "stadium-title stadium-title" "stadium-stats stadium-img" "stadium-map stadium-img";
-}
-
-.item-grid .stadium-title {
-  grid-area: stadium-title;
-}
-
-.item-grid .stadium-map {
-  grid-area: stadium-map;
-}
-
-.item-grid .stadium-map iframe {
-  height: 100%;
-}
-
-.item-grid .stadium-img {
-  background-color: black;
-  grid-area: stadium-img;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  margin: auto;
-}
-
-.item-grid .stadium-img img {
-  width: 100%;
-}
-
-.item-grid iframe {
-  height: 100%;
-}
+  grid-template-areas: "stadium-title stadium-title" "stadium-stats stadium-img" "stadium-map stadium-img"; }
+  .item-grid .stadium-title {
+    grid-area: stadium-title; }
+  .item-grid .stadium-map {
+    grid-area: stadium-map; }
+    .item-grid .stadium-map iframe {
+      height: 100%; }
+  .item-grid .stadium-img {
+    background-color: black;
+    grid-area: stadium-img;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: auto; }
+    .item-grid .stadium-img img {
+      width: 100%; }
+  .item-grid iframe {
+    height: 100%; }
 
 /* Stadiums responsive grid within flex */
 @media screen and (max-width: 800px) {
   .item-grid {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, auto);
-    grid-template-areas: "stadium-title" "stadium-stats" "stadium-img";
-  }
-  .item-grid .stadium-map {
-    display: none;
-  }
-  .item-grid .stadium-img {
-    width: 100%;
-  }
-}
+    grid-template-areas: "stadium-title" "stadium-stats" "stadium-img"; }
+    .item-grid .stadium-map {
+      display: none; }
+    .item-grid .stadium-img {
+      width: 100%; } }
 
 /* TEAMS */
 .container-teams {
   margin: 10px;
-  width: 95%;
-}
-
-.container-teams .team-item {
-  margin-bottom: 25vh;
-  gap: 10px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat 2fr, 1fr;
-  grid-template-areas: "team-img team-img team-img team-img" "goalkeepers defenders midfielders strikers";
-}
-
-.container-teams .team-item .team-img {
-  grid-area: team-img;
-}
-
-.container-teams .team-item .team-img img {
-  width: 100%;
-}
-
-.container-teams .team-item .goalkeepers {
-  margin: 0px 5px;
-  grid-area: goalkeepers;
-}
-
-.container-teams .team-item .defenders {
-  margin: 0px 5px;
-  grid-area: defenders;
-}
-
-.container-teams .team-item .midfielders {
-  margin: 0px 5px;
-  grid-area: midfielders;
-}
-
-.container-teams .team-item .strikers {
-  margin: 0px 5px;
-  grid-area: strikers;
-}
+  width: 95%; }
+  .container-teams .team-item {
+    margin-bottom: 25vh;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat 2fr, 1fr;
+    grid-template-areas: "team-img team-img team-img team-img" "goalkeepers defenders midfielders strikers"; }
+    .container-teams .team-item .team-img {
+      grid-area: team-img; }
+    .container-teams .team-item .team-img img {
+      width: 100%; }
+    .container-teams .team-item .goalkeepers {
+      margin: 0px 5px;
+      grid-area: goalkeepers; }
+    .container-teams .team-item .defenders {
+      margin: 0px 5px;
+      grid-area: defenders; }
+    .container-teams .team-item .midfielders {
+      margin: 0px 5px;
+      grid-area: midfielders; }
+    .container-teams .team-item .strikers {
+      margin: 0px 5px;
+      grid-area: strikers; }
 
 /* Teams responsive grid within flex */
 @media screen and (max-width: 1280px) {
@@ -281,23 +214,18 @@ input[type="submit"] {
     margin-bottom: 10vh;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, auto);
-    grid-template-areas: "team-img team-img" "goalkeepers defenders" "midfielders strikers";
-  }
-}
+    grid-template-areas: "team-img team-img" "goalkeepers defenders" "midfielders strikers"; } }
 
 @media screen and (max-width: 800px) {
   .container-teams {
     margin: 0;
     padding: 0;
-    width: 100%;
-  }
-  .container-teams .team-item {
-    margin-bottom: 10vh;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, auto);
-    grid-template-areas: "team-img" "goalkeepers" "defenders" "midfielders" "strikers";
-  }
-}
+    width: 100%; }
+    .container-teams .team-item {
+      margin-bottom: 10vh;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(5, auto);
+      grid-template-areas: "team-img" "goalkeepers" "defenders" "midfielders" "strikers"; } }
 
 /* FIXTURE flex */
 .container-fixture {
@@ -305,152 +233,141 @@ input[type="submit"] {
   margin-left: 10px;
   width: 95%;
   gap: 20px;
-  justify-content: space-evenly;
-}
-
-.container-fixture .fixture {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-}
-
-.container-fixture .playoff {
-  align-items: center;
-  background-color: rgba(255, 255, 255, 0.6);
-  gap: 20px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(8, 1fr);
-  grid-template-areas: "roundof16-1 quarterfinal-a semifinal-1 ." "roundof16-2 quarterfinal-a semifinal-1 ." "roundof16-3 quarterfinal-b semifinal-1 final" "roundof16-4 quarterfinal-b semifinal-1 final" "roundof16-5 quarterfinal-c semifinal-2 final" "roundof16-6 quarterfinal-c semifinal-2 final" "roundof16-7 quarterfinal-d semifinal-2 ." "roundof16-8 quarterfinal-d semifinal-2 third-place";
-}
-
-.container-fixture .playoff .final {
-  grid-area: final;
-}
-
-.container-fixture .playoff .roundof16-1 {
-  grid-area: roundof16-1;
-}
-
-.container-fixture .playoff .roundof16-2 {
-  grid-area: roundof16-2;
-}
-
-.container-fixture .playoff .roundof16-3 {
-  grid-area: roundof16-3;
-}
-
-.container-fixture .playoff .roundof16-4 {
-  grid-area: roundof16-4;
-}
-
-.container-fixture .playoff .roundof16-5 {
-  grid-area: roundof16-5;
-}
-
-.container-fixture .playoff .roundof16-6 {
-  grid-area: roundof16-6;
-}
-
-.container-fixture .playoff .roundof16-7 {
-  grid-area: roundof16-7;
-}
-
-.container-fixture .playoff .roundof16-8 {
-  grid-area: roundof16-8;
-}
-
-.container-fixture .playoff .quarterfinal-a {
-  grid-area: quarterfinal-a;
-}
-
-.container-fixture .playoff .quarterfinal-b {
-  grid-area: quarterfinal-b;
-}
-
-.container-fixture .playoff .quarterfinal-c {
-  grid-area: quarterfinal-c;
-}
-
-.container-fixture .playoff .quarterfinal-d {
-  grid-area: quarterfinal-d;
-}
-
-.container-fixture .playoff .semifinal-1 {
-  grid-area: semifinal-1;
-}
-
-.container-fixture .playoff .semifinal-2 {
-  grid-area: semifinal-2;
-}
-
-.container-fixture .playoff .final {
-  border-style: double;
-  grid-area: final;
-}
-
-.container-fixture .playoff .third-place {
-  grid-area: third-place;
-}
+  justify-content: space-evenly; }
+  .container-fixture .fixture {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly; }
+  .container-fixture .playoff {
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas: "roundof16-1 quarterfinal-a semifinal-1 ." "roundof16-2 quarterfinal-a semifinal-1 ." "roundof16-3 quarterfinal-b semifinal-1 final" "roundof16-4 quarterfinal-b semifinal-1 final" "roundof16-5 quarterfinal-c semifinal-2 final" "roundof16-6 quarterfinal-c semifinal-2 final" "roundof16-7 quarterfinal-d semifinal-2 ." "roundof16-8 quarterfinal-d semifinal-2 third-place"; }
+    .container-fixture .playoff .final {
+      grid-area: final; }
+    .container-fixture .playoff .roundof16-1 {
+      text-align: center;
+      font-size: 1rem;
+      background-color: rgba(204, 188, 188, 0.913);
+      grid-area: roundof16-1; }
+    .container-fixture .playoff .roundof16-2 {
+      text-align: center;
+      font-size: 1rem;
+      background-color: rgba(249, 204, 204, 0.882);
+      grid-area: roundof16-2; }
+    .container-fixture .playoff .roundof16-3 {
+      text-align: center;
+      font-size: 1rem;
+      background-color: rgba(204, 188, 188, 0.913);
+      grid-area: roundof16-3; }
+    .container-fixture .playoff .roundof16-4 {
+      text-align: center;
+      font-size: 1rem;
+      background-color: rgba(249, 204, 204, 0.882);
+      grid-area: roundof16-4; }
+    .container-fixture .playoff .roundof16-5 {
+      text-align: center;
+      font-size: 1rem;
+      background-color: rgba(204, 188, 188, 0.913);
+      grid-area: roundof16-5; }
+    .container-fixture .playoff .roundof16-6 {
+      text-align: center;
+      font-size: 1rem;
+      background-color: rgba(249, 204, 204, 0.882);
+      grid-area: roundof16-6; }
+    .container-fixture .playoff .roundof16-7 {
+      text-align: center;
+      font-size: 1rem;
+      background-color: rgba(204, 188, 188, 0.913);
+      grid-area: roundof16-7; }
+    .container-fixture .playoff .roundof16-8 {
+      text-align: center;
+      font-size: 1rem;
+      background-color: rgba(249, 204, 204, 0.882);
+      grid-area: roundof16-8; }
+    .container-fixture .playoff .quarterfinal-a {
+      text-align: center;
+      font-size: 1.2rem;
+      background-color: rgba(240, 170, 170, 0.4);
+      grid-area: quarterfinal-a; }
+    .container-fixture .playoff .quarterfinal-b {
+      text-align: center;
+      font-size: 1.2rem;
+      background-color: rgba(240, 170, 170, 0.4);
+      grid-area: quarterfinal-b; }
+    .container-fixture .playoff .quarterfinal-c {
+      text-align: center;
+      font-size: 1.2rem;
+      background-color: rgba(240, 170, 170, 0.4);
+      grid-area: quarterfinal-c; }
+    .container-fixture .playoff .quarterfinal-d {
+      text-align: center;
+      font-size: 1.2rem;
+      background-color: rgba(240, 170, 170, 0.4);
+      grid-area: quarterfinal-d; }
+    .container-fixture .playoff .semifinal-1 {
+      text-align: center;
+      font-size: 1.4rem;
+      background-color: rgba(193, 116, 116, 0.592);
+      grid-area: semifinal-1; }
+    .container-fixture .playoff .semifinal-2 {
+      text-align: center;
+      font-size: 1.4rem;
+      background-color: rgba(193, 116, 116, 0.592);
+      grid-area: semifinal-2; }
+    .container-fixture .playoff .final {
+      text-align: center;
+      font-size: 1.4rem;
+      background-color: rgba(184, 59, 59, 0.647);
+      border-style: double;
+      grid-area: final; }
+    .container-fixture .playoff .third-place {
+      text-align: center;
+      font-size: 1.2rem;
+      background-color: rgba(193, 116, 116, 0.274);
+      grid-area: third-place; }
 
 .playoff-table {
-  display: none;
-}
+  display: none; }
 
 /* grid de la serie de playoff*/
 @media screen and (max-width: 800px) {
   .container-fixture .playoff {
-    display: none;
-  }
+    display: none; }
   .playoff-table {
-    display: unset;
-  }
+    display: unset; }
   .fixture-item {
-    width: 100%;
-  }
-}
+    width: 100%; } }
 
 @media screen and (max-width: 500px) {
   .fixture-item {
-    font-size: 10px;
-  }
-}
+    font-size: 10px; } }
 
 /*contenedor principal flex*/
 .container-main-home {
   text-align: center;
-  /* clase para ajustar los background de la home*/
-}
-
-.container-main-home .background-img {
-  height: 700px;
-  display: flex;
-  background-size: cover;
-  background-position-x: center;
-  min-width: 100%;
-}
-
-.container-main-home #qatar {
-  background-image: url("../resources/img-qatar1.jpeg");
-}
-
-.container-main-home #fixture {
-  background-image: url("../resources/img-fixture1.jpg");
-  background-position-y: center;
-}
-
-.container-main-home #stadiums {
-  background-image: url("../resources/img-stadiums1.jpeg");
-  background-position-y: center;
-}
-
-.container-main-home #teams {
-  background-image: url("../resources/img-teams1.jpeg");
-}
+  /* clase para ajustar los background de la home*/ }
+  .container-main-home .background-img {
+    height: 700px;
+    display: flex;
+    background-size: cover;
+    background-position-x: center;
+    min-width: 100%; }
+  .container-main-home #qatar {
+    background-image: url("../resources/img-qatar1.jpeg"); }
+  .container-main-home #fixture {
+    background-image: url("../resources/img-fixture1.jpg");
+    background-position-y: center; }
+  .container-main-home #stadiums {
+    background-image: url("../resources/img-stadiums1.jpeg");
+    background-position-y: center; }
+  .container-main-home #teams {
+    background-image: url("../resources/img-teams1.jpeg"); }
 
 /* Home Responsive */
 @media screen and (max-width: 500px) {
   .background-img {
-    height: 500px;
-  }
-}
+    height: 500px; } }

@@ -15,12 +15,12 @@
 
   .grid-title {
     grid-area: grid-title;
-    height: auto;
+    height: auto !important;
   }
 
   .aside {
     grid-area: aside;
-    height: auto;
+    height: 100%;
   }
 
   .stats {
@@ -35,12 +35,20 @@
 
   .media2 {
     grid-area: media2;
+
     iframe {
       height: 700px;
       width: 100%;
     }
   }
 }
+
+/**.carousel {
+  background-color: rgba(0, 0, 0, 0.068);
+  height: auto !important;
+  align-content: center;
+}**/
+
 
 @media screen and (max-width: 800px) {
   .container-qatar {
@@ -59,5 +67,9 @@
       height: auto;
       width: 100%;
     }
+  }
+
+  .carousel {
+    font-size: 5px;
   }
 }

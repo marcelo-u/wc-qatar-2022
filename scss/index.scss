@@ -1,17 +1,18 @@
-@import "./modules/colors";
-@import "./modules/fonts";
-@import "./modules/all";
-@import "./partials/header";
-@import "./partials/card";
-@import "./partials/form";
-@import "./partials/qatar-section";
-@import "./partials/stadiums-section";
-@import "./partials/teams-section";
-@import "./partials/fixture-section";
+@import "./base/colors";
+@import "./base/fonts";
+@import "./base/all";
+@import "./components/header";
+@import "./components/card";
+@import "./components/form";
+@import "./components/qatar-section";
+@import "./components/stadiums-section";
+@import "./components/teams-section";
+@import "./components/fixture-section";
 
 /*contenedor principal flex*/
 .container-main-home {
   text-align: center;
+
   /* clase para ajustar los background de la home*/
   .background-img {
     height: 700px;
@@ -20,6 +21,7 @@
     background-position-x: center;
     min-width: 100%;
   }
+
   #qatar {
     background-image: url("../resources/img-qatar1.jpeg");
   }

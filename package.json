@@ -1,10 +1,9 @@
 {
-  "name": "qatarresponsivegh",
+  "name": "Qatar WC 2022",
   "version": "1.0.0",
-  "description": "",
+  "description": "Sitio no oficial con información sobre la próxima copa del mundo",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss scss/index.scss css/index.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
@@ -12,8 +11,8 @@
     "type": "git",
     "url": "git+https://github.com/marcelo-u/wc-qatar-2022.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["HTML", "CSS", "BOOTSTRAP", "SCSS", "SASS", "NODE"],
+  "author": "Marcelo Urreli",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/marcelo-u/wc-qatar-2022/issues"

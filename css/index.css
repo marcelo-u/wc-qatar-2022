@@ -186,6 +186,10 @@ input[type="submit"] {
 .container-teams {
   margin: 10px;
   width: 95%; }
+  .container-teams .index {
+    background-color: rgba(0, 0, 0, 0.7); }
+    .container-teams .index .nav-link {
+      color: #846e26; }
   .container-teams .team-item {
     margin-bottom: 25vh;
     gap: 10px;

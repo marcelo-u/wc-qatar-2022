@@ -3,6 +3,12 @@
 .container-teams {
   margin: 10px;
   width: 95%;
+  .index {
+    background-color: $bgColor3;
+    .nav-link {
+      color: $color1;
+    }
+  }
   .team-item {
     margin-bottom: 25vh;
     gap: 10px;

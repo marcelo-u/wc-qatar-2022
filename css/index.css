@@ -125,12 +125,10 @@ input[type="submit"] {
     .container-qatar .media2 iframe {
       height: 700px;
       width: 100%; }
+  .container-qatar .carousel img {
+    height: 600px;
+    object-fit: cover; }
 
-/**.carousel {
-  background-color: rgba(0, 0, 0, 0.068);
-  height: auto !important;
-  align-content: center;
-}**/
 @media screen and (max-width: 800px) {
   .container-qatar {
     grid-template-columns: 1fr;
@@ -139,8 +137,17 @@ input[type="submit"] {
   .media2 iframe {
     height: auto;
     width: 100%; }
-  .carousel {
-    font-size: 5px; } }
+  .carousel h5 {
+    font-size: 20px; }
+  .carousel p {
+    font-size: 15px; }
+  .carousel img {
+    height: 500px;
+    object-fit: cover; } }
+
+@media screen and (max-width: 500px) {
+  .carousel h5 {
+    font-size: 15px; } }
 
 /* ESTADIOS */
 .container-stadiums {
@@ -186,15 +193,32 @@ input[type="submit"] {
 .container-teams {
   margin: 10px;
   width: 95%; }
+  .container-teams .index {
+    background-color: rgba(0, 0, 0, 0.7); }
+    .container-teams .index .nav-link {
+      color: #846e26; }
   .container-teams .team-item {
     margin-bottom: 25vh;
     gap: 10px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat 2fr, 1fr;
-    grid-template-areas: "team-img team-img team-img team-img" "goalkeepers defenders midfielders strikers"; }
+    grid-template-rows: repeat 2fr, auto, auto;
+    grid-template-areas: "team-img team-img team-img team-img" "goalkeepers defenders midfielders strikers" "back-to-top back-to-top back-to-top back-to-top"; }
     .container-teams .team-item .team-img {
+      flex: none;
+      position: relative;
       grid-area: team-img; }
+      .container-teams .team-item .team-img .img-container {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        transform: translateY(0%); }
+        .container-teams .team-item .team-img .img-container .slider_content .slider_title {
+          color: #c0a035;
+          font-size: 2rem;
+          background-color: rgba(0, 0, 0, 0.7); }
     .container-teams .team-item .team-img img {
       width: 100%; }
     .container-teams .team-item .goalkeepers {
@@ -209,6 +233,11 @@ input[type="submit"] {
     .container-teams .team-item .strikers {
       margin: 0px 5px;
       grid-area: strikers; }
+    .container-teams .team-item .back-to-top {
+      text-align: center;
+      margin: 10px 10px;
+      grid-area: back-to-top;
+      height: 20px; }
 
 /* Teams responsive grid within flex */
 @media screen and (max-width: 1280px) {
@@ -216,8 +245,8 @@ input[type="submit"] {
     height: auto;
     margin-bottom: 10vh;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, auto);
-    grid-template-areas: "team-img team-img" "goalkeepers defenders" "midfielders strikers"; } }
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "team-img team-img" "goalkeepers defenders" "midfielders strikers" "back-to-top back-to-top"; } }
 
 @media screen and (max-width: 800px) {
   .container-teams {
@@ -228,7 +257,7 @@ input[type="submit"] {
       margin-bottom: 10vh;
       grid-template-columns: 1fr;
       grid-template-rows: repeat(5, auto);
-      grid-template-areas: "team-img" "goalkeepers" "defenders" "midfielders" "strikers"; } }
+      grid-template-areas: "team-img" "goalkeepers" "defenders" "midfielders" "strikers" "back-to-top"; } }
 
 /* FIXTURE flex */
 .container-fixture {

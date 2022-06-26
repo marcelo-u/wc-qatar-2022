@@ -3,17 +3,36 @@
 .container-teams {
   margin: 10px;
   width: 95%;
+  .index {
+    background-color: $bgColor3;
+    .nav-link {
+      color: $color1;
+    }
+  }
   .team-item {
     margin-bottom: 25vh;
     gap: 10px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat 2fr, 1fr;
+    grid-template-rows: repeat 2fr, auto, auto;
     grid-template-areas:
       "team-img team-img team-img team-img"
-      "goalkeepers defenders midfielders strikers";
+      "goalkeepers defenders midfielders strikers"
+      "back-to-top back-to-top back-to-top back-to-top";
     .team-img {
+      flex: none;
+      position: relative;
       grid-area: team-img;
+      .img-container {
+        .slider_content {
+          .slider_title {
+            color: $color2;
+            font-size: 2rem;
+            background-color: $bgColor3;
+          }
+        }
+        position: absolute; left:0; right: 0; bottom: 0; text-align: center; transform: translateY(0%);
+      }
     }
 
     .team-img img {
@@ -39,6 +58,13 @@
       margin: 0px 5px;
       grid-area: strikers;
     }
+    
+    .back-to-top {
+      text-align: center;
+      margin: 10px 10px;
+      grid-area: back-to-top;
+      height: 20px;
+    }
   }
 }
 
@@ -49,11 +75,12 @@
       height: auto;
       margin-bottom: 10vh;
       grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(3, auto);
+      grid-template-rows: repeat(4, auto);
       grid-template-areas:
         "team-img team-img"
         "goalkeepers defenders"
-        "midfielders strikers";
+        "midfielders strikers"
+        "back-to-top back-to-top";
     }
   }
 }
@@ -72,7 +99,8 @@
         "goalkeepers"
         "defenders"
         "midfielders"
-        "strikers";
+        "strikers"
+        "back-to-top";
     }
   }
 }

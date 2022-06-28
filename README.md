@@ -2,7 +2,7 @@
 
 _Sitio con información sobre la próxima copa del mundo y del país que la organiza, Qatar_
 
-### Tecnoogías
+### Tecnologías
 
 - [HTML](https://developer.mozilla.org/es/docs/Web/HTML)
 - [CSS](https://developer.mozilla.org/es/docs/Web/CSS)
@@ -46,3 +46,11 @@ _Sitio con información sobre la próxima copa del mundo y del país que la orga
 - _if_ para intercalar estilos entre pares e impares en octavos de final.
 
 - Se incorpora `package.json` al repositorio.
+
+### Bootstrap
+
+- contact.html - Form con estilos adaptados
+
+- qatar.html - Carousel responsive con estilos adaptados
+
+- Todos - navbar responsive con menú hamburger con estilos adaptados
